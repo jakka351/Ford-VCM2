@@ -1,3 +1,5 @@
+<img width="24%" height="24%" align="right" alt="image" src="https://github.com/user-attachments/assets/0c3159dc-3733-4b19-8aa5-6dfcf2cbadaf" />
+
 # Ford VCM II — Internals, Recovery & Firmware Backup
 
 Working notes and operating procedures for the **Ford/Rotunda VCM II** (genuine units: ETAS/Bosch **6516** family). 
@@ -85,6 +87,7 @@ Use when: a firmware update failed, the SD is corrupt, the Error LED is red at b
 ## Repair Mode
 
 In VCI Manager, keyboard combo `CTRL`+`SHIFT`+`W` will show a hidden tab, `VCI Tools`. Use it to set repair mode, and enable the webserver and root `telnet` access to the filesystem.
+<img width="652" height="680" alt="image" src="https://github.com/user-attachments/assets/9b4c3de9-de59-4b1d-a767-c7dc6571ebb6" />
 
 1. Set repair mode
 2. Note the IP address
