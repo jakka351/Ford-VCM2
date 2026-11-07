@@ -1,0 +1,249 @@
+# cmd: ls -laR /mnt/sd 2>/dev/null
+# rc: 0
+
+/mnt/sd:
+drwxrwx---    5 root     root         4096 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jan  1 00:00 [1;34m..[0m
+drwxrwxrwx    8 root     root         4096 Jan  1 00:08 [1;34mapp-components[0m
+drwxrwxrwx    4 root     root         4096 Jan  1 00:00 [1;34mapps[0m
+lrwxrwxrwx    1 root     root           10 Jan  1 00:07 [1;36mlocal[0m -> [1;34m/usr/local[0m
+drwx------    2 root     root        16384 Jan  1 00:02 [1;34mlost+found[0m
+-rw-r--r--    1 root     root            9 Jan  1 00:08 [0;0msd-card-version[0m
+
+/mnt/sd/app-components:
+drwxrwxrwx    8 root     root         4096 Jan  1 00:08 [1;34m.[0m
+drwxrwx---    5 root     root         4096 Jan  1 00:08 [1;34m..[0m
+drwxrwxrwx    2 root     root         4096 Jan  1 00:07 [1;34metas-J2534-lib[0m
+drwxrwxrwx    2 root     root         4096 Jan  1 00:07 [1;34metas-J2534-mon-lib[0m
+drwxrwxrwx    2 root     root         4096 Jan  1 00:07 [1;34metas-rt-lib[0m
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34metas-vci-lib[0m
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34metas-vci-mon-lib[0m
+drwxrwxrwx    5 root     root         4096 Jan  1 00:08 [1;34mweb-server[0m
+
+/mnt/sd/app-components/etas-J2534-lib:
+drwxrwxrwx    2 root     root         4096 Jan  1 00:07 [1;34m.[0m
+drwxrwxrwx    8 root     root         4096 Jan  1 00:08 [1;34m..[0m
+-rwxrwxrwx    1 root     root          211 Jan  1 00:07 [1;32mboot.sh[0m
+lrwxrwxrwx    1 root     root           16 Jan  1 00:07 [1;36mlibbvtx4j32.so[0m -> [1;32mlibbvtx4j32.so.1[0m
+lrwxrwxrwx    1 root     root           22 Jan  1 00:07 [1;36mlibbvtx4j32.so.1[0m -> [1;32mlibbvtx4j32.so.1.0.0.0[0m
+-rwxrwxrwx    1 root     root      2166696 Jul 26  2015 [1;32mlibbvtx4j32.so.1.0.0.0[0m
+
+/mnt/sd/app-components/etas-J2534-mon-lib:
+drwxrwxrwx    2 root     root         4096 Jan  1 00:07 [1;34m.[0m
+drwxrwxrwx    8 root     root         4096 Jan  1 00:08 [1;34m..[0m
+-rwxrwxrwx    1 root     root          376 Jan  1 00:07 [1;32mboot.sh[0m
+-rwxrwxrwx    1 root     root      1823764 Jul 26  2015 [1;32mlibbvtx4j32.so.1.0.0.0[0m
+
+/mnt/sd/app-components/etas-rt-lib:
+drwxrwxrwx    2 root     root         4096 Jan  1 00:07 [1;34m.[0m
+drwxrwxrwx    8 root     root         4096 Jan  1 00:08 [1;34m..[0m
+-rwxrwxrwx    1 root     root          145 Jan  1 00:07 [1;32mboot.sh[0m
+lrwxrwxrwx    1 root     root           21 Jan  1 00:07 [1;36mlibbvtx-vci-rt-j.so[0m -> [1;32mlibbvtx-vci-rt-j.so.1[0m
+lrwxrwxrwx    1 root     root           27 Jan  1 00:07 [1;36mlibbvtx-vci-rt-j.so.1[0m -> [1;32mlibbvtx-vci-rt-j.so.1.0.0.0[0m
+-rwxrwxrwx    1 root     root      2672436 Jul 26  2015 [1;32mlibbvtx-vci-rt-j.so.1.0.0.0[0m
+lrwxrwxrwx    1 root     root           21 Jan  1 00:07 [1;36mlibbvtx-vci-rt-p.so[0m -> [1;32mlibbvtx-vci-rt-p.so.1[0m
+lrwxrwxrwx    1 root     root           27 Jan  1 00:07 [1;36mlibbvtx-vci-rt-p.so.1[0m -> [1;32mlibbvtx-vci-rt-p.so.1.0.0.0[0m
+-rwxrwxrwx    1 root     root      2672436 Jul 26  2015 [1;32mlibbvtx-vci-rt-p.so.1.0.0.0[0m
+lrwxrwxrwx    1 root     root           19 Jan  1 00:07 [1;36mlibbvtx-vci-rt.so[0m -> [1;32mlibbvtx-vci-rt.so.1[0m
+lrwxrwxrwx    1 root     root           25 Jan  1 00:07 [1;36mlibbvtx-vci-rt.so.1[0m -> [1;32mlibbvtx-vci-rt.so.1.0.0.0[0m
+-rwxrwxrwx    1 root     root      2672436 Jul 26  2015 [1;32mlibbvtx-vci-rt.so.1.0.0.0[0m
+
+/mnt/sd/app-components/etas-vci-lib:
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34m.[0m
+drwxrwxrwx    8 root     root         4096 Jan  1 00:08 [1;34m..[0m
+-rwxrwxrwx    1 root     root          161 Jan  1 00:08 [1;32mboot.sh[0m
+lrwxrwxrwx    1 root     root           20 Jan  1 00:08 [1;36mlibbvtx-vci-pdu.so[0m -> [1;32mlibbvtx-vci-pdu.so.1[0m
+lrwxrwxrwx    1 root     root           26 Jan  1 00:08 [1;36mlibbvtx-vci-pdu.so.1[0m -> [1;32mlibbvtx-vci-pdu.so.1.0.0.0[0m
+-rwxrwxrwx    1 root     root      5568828 Jul 26  2015 [1;32mlibbvtx-vci-pdu.so.1.0.0.0[0m
+
+/mnt/sd/app-components/etas-vci-mon-lib:
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34m.[0m
+drwxrwxrwx    8 root     root         4096 Jan  1 00:08 [1;34m..[0m
+-rwxrwxrwx    1 root     root          369 Jan  1 00:08 [1;32mboot.sh[0m
+-rwxrwxrwx    1 root     root      4476988 Jul 26  2015 [1;32mlibbvtx-vci-pdu.so.1.0.0.0[0m
+
+/mnt/sd/app-components/web-server:
+drwxrwxrwx    5 root     root         4096 Jan  1 00:08 [1;34m.[0m
+drwxrwxrwx    8 root     root         4096 Jan  1 00:08 [1;34m..[0m
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34mbin[0m
+-rwxrwxrwx    1 root     root          648 Jan  1 00:08 [1;32mboot.sh[0m
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34mdefault[0m
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34mlib[0m
+-rwxrwxrwx    1 root     root         3176 Jul 26  2015 [1;32mlighttpd-main.conf[0m
+-rwxrwxrwx    1 root     root          239 Jan  1 00:08 [1;32mstart.sh[0m
+-rwxrwxrwx    1 root     root           63 Jan  1 00:08 [1;32mstop.sh[0m
+
+/mnt/sd/app-components/web-server/bin:
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34m.[0m
+drwxrwxrwx    5 root     root         4096 Jan  1 00:08 [1;34m..[0m
+-rwxrwxrwx    1 root     root       170103 Jul 26  2015 [1;32mlighttpd[0m
+-rwxrwxrwx    1 root     root         7820 Jul 26  2015 [1;32mlighttpd-angel[0m
+
+/mnt/sd/app-components/web-server/default:
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34m.[0m
+drwxrwxrwx    5 root     root         4096 Jan  1 00:08 [1;34m..[0m
+-rwxrwxrwx    1 root     root           55 Jul 26  2015 [1;32mindex.html[0m
+
+/mnt/sd/app-components/web-server/lib:
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34m.[0m
+drwxrwxrwx    5 root     root         4096 Jan  1 00:08 [1;34m..[0m
+-rwxrwxrwx    1 root     root        84100 Jul 26  2015 [1;32mlibpcre.so.0.0.1[0m
+-rwxrwxrwx    1 root     root         7110 Jul 26  2015 [1;32mmod_access.so[0m
+-rwxrwxrwx    1 root     root        16164 Jul 26  2015 [1;32mmod_accesslog.so[0m
+-rwxrwxrwx    1 root     root         7642 Jul 26  2015 [1;32mmod_alias.so[0m
+-rwxrwxrwx    1 root     root        27667 Jul 26  2015 [1;32mmod_auth.so[0m
+-rwxrwxrwx    1 root     root        22443 Jul 26  2015 [1;32mmod_cgi.so[0m
+-rwxrwxrwx    1 root     root         9257 Jul 26  2015 [1;32mmod_cml.so[0m
+-rwxrwxrwx    1 root     root        17997 Jul 26  2015 [1;32mmod_compress.so[0m
+-rwxrwxrwx    1 root     root        19474 Jul 26  2015 [1;32mmod_dirlisting.so[0m
+-rwxrwxrwx    1 root     root         7029 Jul 26  2015 [1;32mmod_evasive.so[0m
+-rwxrwxrwx    1 root     root         9543 Jul 26  2015 [1;32mmod_evhost.so[0m
+-rwxrwxrwx    1 root     root        10062 Jul 26  2015 [1;32mmod_expire.so[0m
+-rwxrwxrwx    1 root     root        10852 Jul 26  2015 [1;32mmod_extforward.so[0m
+-rwxrwxrwx    1 root     root        50686 Jul 26  2015 [1;32mmod_fastcgi.so[0m
+-rwxrwxrwx    1 root     root         9090 Jul 26  2015 [1;32mmod_flv_streaming.so[0m
+-rwxrwxrwx    1 root     root         8453 Jul 26  2015 [1;32mmod_indexfile.so[0m
+-rwxrwxrwx    1 root     root         4587 Jul 26  2015 [1;32mmod_magnet.so[0m
+-rwxrwxrwx    1 root     root         4797 Jul 26  2015 [1;32mmod_mysql_vhost.so[0m
+-rwxrwxrwx    1 root     root        22395 Jul 26  2015 [1;32mmod_proxy.so[0m
+-rwxrwxrwx    1 root     root         9368 Jul 26  2015 [1;32mmod_redirect.so[0m
+-rwxrwxrwx    1 root     root        11428 Jul 26  2015 [1;32mmod_rewrite.so[0m
+-rwxrwxrwx    1 root     root        17181 Jul 26  2015 [1;32mmod_rrdtool.so[0m
+-rwxrwxrwx    1 root     root        39022 Jul 26  2015 [1;32mmod_scgi.so[0m
+-rwxrwxrwx    1 root     root         9271 Jul 26  2015 [1;32mmod_secdownload.so[0m
+-rwxrwxrwx    1 root     root         7728 Jul 26  2015 [1;32mmod_setenv.so[0m
+-rwxrwxrwx    1 root     root         8897 Jul 26  2015 [1;32mmod_simple_vhost.so[0m
+-rwxrwxrwx    1 root     root        28489 Jul 26  2015 [1;32mmod_ssi.so[0m
+-rwxrwxrwx    1 root     root        12778 Jul 26  2015 [1;32mmod_staticfile.so[0m
+-rwxrwxrwx    1 root     root        25445 Jul 26  2015 [1;32mmod_status.so[0m
+-rwxrwxrwx    1 root     root         8747 Jul 26  2015 [1;32mmod_trigger_b4_dl.so[0m
+-rwxrwxrwx    1 root     root         9546 Jul 26  2015 [1;32mmod_userdir.so[0m
+-rwxrwxrwx    1 root     root         9698 Jul 26  2015 [1;32mmod_usertrack.so[0m
+-rwxrwxrwx    1 root     root        23251 Jul 26  2015 [1;32mmod_webdav.so[0m
+
+/mnt/sd/apps:
+drwxrwxrwx    4 root     root         4096 Jan  1 00:00 [1;34m.[0m
+drwxrwx---    5 root     root         4096 Jan  1 00:08 [1;34m..[0m
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34mpendant[0m
+drwxrwxrwx    5 root     root         4096 Jan  1 00:00 [1;34mvci-diags[0m
+
+/mnt/sd/apps/pendant:
+drwxrwxrwx    2 root     root         4096 Jan  1 00:08 [1;34m.[0m
+drwxrwxrwx    4 root     root         4096 Jan  1 00:00 [1;34m..[0m
+-rwxrwxrwx    1 root     root        18779 Jul 26  2015 [1;32mpendant-repro-engine[0m
+-rwxrwxrwx    1 root     root           58 Jan  1 00:08 [1;32mstart.sh[0m
+-rwxrwxrwx    1 root     root           57 Jan  1 00:08 [1;32mstop.sh[0m
+-rwxrwxrwx    1 root     root         9724 Jul 26  2015 [1;32mvci_pendant.abs.s19[0m
+
+/mnt/sd/apps/vci-diags:
+drwxrwxrwx    5 root     root         4096 Jan  1 00:00 [1;34m.[0m
+drwxrwxrwx    4 root     root         4096 Jan  1 00:00 [1;34m..[0m
+-rwxrwxrwx    1 1001     1001        54352 Sep 19  2014 [1;32m6512_0_diags.tgz[0m
+-rwxrwxrwx    1 1001     1001       125404 Nov 27  2013 [1;32m6512_11_diags.tgz[0m
+-rwxrwxrwx    1 1001     1001       286301 Nov 27  2013 [1;32m6513_0_diags.tgz[0m
+-rwxrwxrwx    1 1001     1001       132120 Jul 26  2015 [1;32m6516_0_diags.tgz[0m
+-rwxrwxrwx    1 1001     1001       151563 Nov 27  2013 [1;32m6516_20_diags.tgz[0m
+-rw-r--r--    1 admin    1000        84928 Nov 27  2013 [0;0m6516_20_web.tgz[0m
+lrwxrwxrwx    1 1001     1001           16 Jan  1 00:08 [1;36m6516_50_diags.tgz[0m -> [1;32m6516_0_diags.tgz[0m
+-rwxrwxrwx    1 1001     1001       149915 May  2  2014 [1;32m6517_30_diags.tgz[0m
+-rwxr-xr-x    1 admin    1000         6629 May  6  2013 [1;32mburnin.sh[0m
+drwxr-xr-x    2 admin    1000         4096 Jan  1 00:00 [1;34mhttp[0m
+-rwxrwxrwx    1 1001     1001        43090 Nov 26  2013 [1;32mhttp.tgz[0m
+drwxr-xr-x    3 admin    1000         4096 Jan  1 00:00 [1;34mhwtest-scripts[0m
+drwxr-xr-x    4 root     root         4096 Jan  1 00:10 [1;34mresults[0m
+-rwxrwxrwx    1 1001     1001       162808 Jan 16  2014 [1;32mvci-pro_diags.tgz[0m
+
+/mnt/sd/apps/vci-diags/http:
+drwxr-xr-x    2 admin    1000         4096 Jan  1 00:00 [1;34m.[0m
+drwxrwxrwx    5 root     root         4096 Jan  1 00:00 [1;34m..[0m
+-rwxr-xr-x    1 admin    1000        89072 Aug 18  2011 [1;32mhttpd[0m
+-rwxr-xr-x    1 admin    1000          203 Nov 26  2013 [1;32mstart-httpd[0m
+
+/mnt/sd/apps/vci-diags/hwtest-scripts:
+drwxr-xr-x    3 admin    1000         4096 Jan  1 00:00 [1;34m.[0m
+drwxrwxrwx    5 root     root         4096 Jan  1 00:00 [1;34m..[0m
+-rwxr-xr-x    1 admin    1000          220 Apr  4  2012 [1;32m802.11n.conf[0m
+-rwxr-xr-x    1 admin    1000         6844 Jan  1  1970 [1;32mADC-Tests-Misc.6516[0m
+-rwxr-x--x    1 admin    1000         7217 Jan  1  1970 [1;32mADC-Tests-Misc_ST.6516[0m
+-rwxr-xr-x    1 admin    1000        11824 Jan  1  1970 [1;32mCAN-Triple-Loop-Back-Test.6516[0m
+-rwxr-xr-x    1 admin    1000        11785 Jan  1  1970 [1;32mFT-CAN-Loopback.6516[0m
+-rwxr-x--x    1 admin    1000        11949 Jan  1  1970 [1;32mFT-CAN-Loopback_ST.6516[0m
+-rwxr-xr-x    1 admin    1000         2924 May  6  2013 [1;32mGPIO1-Test.6516[0m
+-rwxr-xr-x    1 admin    1000        12363 Jan  1  1970 [1;32mJ1850-PWM-Loop-Back-Test.6516[0m
+-rwxr-x--x    1 admin    1000        12405 Jan  1  1970 [1;32mJ1850-PWM-Loop-Back-Test_ST.6516[0m
+-rwxr-xr-x    1 admin    1000        11356 Jan  1  1970 [1;32mJ1850-VPW-Loopback-test.6516[0m
+-rwxr-x--x    1 admin    1000        11390 Jan  1  1970 [1;32mJ1850-VPW-Loopback-test_ST.6516[0m
+-rwxr-xr-x    1 admin    1000         1703 May  6  2013 [1;32mRTC-read[0m
+-rwxr-xr-x    1 admin    1000         1938 May  6  2013 [1;32mRTC-set[0m
+-rwxr-xr-x    1 admin    1000         4016 Jan  1  1970 [1;32mRegister-Read-Test.6516[0m
+-rwxr-xr-x    1 admin    1000         4013 Jan  1  1970 [1;32mRegister-Read-Test_ST.6516[0m
+-rwxr-xr-x    1 admin    1000         5182 Jan  1  1970 [1;32mTemp_Sensor_Test.6516[0m
+-rwxr-xr-x    1 admin    1000        13073 Jan  1  1970 [1;32mUART-Loop-Back-Test.6516[0m
+-rwxr-x--x    1 admin    1000        14336 Nov 13  2013 [1;32mUART-Loop-Back-Test_ST.6516[0m
+-rwxr-xr-x    1 admin    1000         7033 Jan  1  1970 [1;32mUBP-Test.6516[0m
+-rwxr-x--x    1 admin    1000         7144 Jan  1  1970 [1;32mUBP-Test_ST.6516[0m
+-rwxr-xr-x    1 admin    1000          592 Nov 26  2013 [1;32mUSB_2.0_HostCheck.6516[0m
+-rwxr-xr-x    1 admin    1000         6042 Apr  8  2012 [1;32mUser-Interface-Test.STD[0m
+-rwxr-xr-x    1 admin    1000         9349 Jan  1  1970 [1;32mVpp-Test.6516[0m
+-rwxr-x--x    1 admin    1000         9512 Jan  1  1970 [1;32mVpp-Test_ST.6516[0m
+-rwxr-xr-x    1 admin    1000         9923 Jan  1  1970 [1;32mWake-Up-Test.6516[0m
+-rw-r--r--    1 admin    1000          722 Jan  1  1970 [0;0mburnin_summary.template.6516[0m
+-rwxr-xr-x    1 admin    1000           76 Apr  8  2012 [1;32mcounttime[0m
+-rwxr-xr-x    1 admin    1000         3325 May  6  2013 [1;32mflashLEDs[0m
+-rwxr-xr-x    1 admin    1000        20556 May  6  2013 [1;32mhwcheckout[0m
+-rwxr-xr-x    1 admin    1000        22552 May  6  2013 [1;32mhwcheckout_ST.6516_FD[0m
+-rwxr-xr-x    1 admin    1000         3393 May  6  2013 [1;32mloopback_present.6516[0m
+-rwxr-xr-x    1 admin    1000         3393 May  6  2013 [1;32mloopback_present.6516_FD[0m
+-r-xr-xr-x    1 admin    1000         5748 Jan  1  1970 [1;32mmemdump.so[0m
+-rwxr-xr-x    1 admin    1000          560 Apr  4  2012 [1;32mpoll_power_button[0m
+-rwxr-xr-x    1 admin    1000          250 Apr  4  2012 [1;32mpower_button_timeout[0m
+-rwxr-xr-x    1 admin    1000          155 May  6  2013 [1;32mself-test.sh[0m
+-rwxr-xr-x    1 root     root            2 Jan  1 00:05 [1;32mseq_file[0m
+-rwxr-xr-x    1 admin    1000            2 Apr  4  2012 [1;32mseq_file.initial[0m
+-rwxr-xr-x    1 admin    1000         7439 Nov 26  2013 [1;32msetled[0m
+-rw-r--r--    1 admin    1000         5249 Nov 26  2013 [0;0msetled.c[0m
+-rwxr-xr-x    1 root     root           84 Jan  1 00:00 [1;32mstartcount[0m
+-rwxr-xr-x    1 admin    1000           84 Apr  8  2012 [1;32mstartcount.initial[0m
+drwxr-xr-x    3 admin    1000         4096 Jan  1 00:00 [1;34mtxt-files[0m
+
+/mnt/sd/apps/vci-diags/hwtest-scripts/txt-files:
+drwxr-xr-x    3 admin    1000         4096 Jan  1 00:00 [1;34m.[0m
+drwxr-xr-x    3 admin    1000         4096 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    2 admin    1000         4096 Jan  1 00:00 [1;34mEVB-4_Checkout[0m
+
+/mnt/sd/apps/vci-diags/hwtest-scripts/txt-files/EVB-4_Checkout:
+drwxr-xr-x    2 admin    1000         4096 Jan  1 00:00 [1;34m.[0m
+drwxr-xr-x    3 admin    1000         4096 Jan  1 00:00 [1;34m..[0m
+-rwxr-xr-x    1 admin    1000           27 Jan  1  1970 [1;32mRead FPGA Config Registers.txt[0m
+
+/mnt/sd/apps/vci-diags/results:
+drwxr-xr-x    4 root     root         4096 Jan  1 00:10 [1;34m.[0m
+drwxrwxrwx    5 root     root         4096 Jan  1 00:00 [1;34m..[0m
+-rw-r--r--    1 root     root          785 Jan  1 00:00 [0;0mburnin-time[0m
+drwxr-xr-x    2 root     root         4096 Jan  1 00:10 [1;34mresults_archive[0m
+drwxr-xr-x    3 root     root         4096 Jan  1 00:10 [1;34mresults_archive_3[0m
+
+/mnt/sd/apps/vci-diags/results/results_archive:
+drwxr-xr-x    2 root     root         4096 Jan  1 00:10 [1;34m.[0m
+drwxr-xr-x    4 root     root         4096 Jan  1 00:10 [1;34m..[0m
+-rw-r--r--    1 root     root         1580 Jan  1 00:10 [0;0mresults_archive_3.tgz[0m
+
+/mnt/sd/apps/vci-diags/results/results_archive_3:
+drwxr-xr-x    3 root     root         4096 Jan  1 00:10 [1;34m.[0m
+drwxr-xr-x    4 root     root         4096 Jan  1 00:10 [1;34m..[0m
+-rw-r--r--    1 root     root          362 Jan  1 00:09 [0;0mADC.FAIL[0m
+-rw-r--r--    1 root     root          560 Jan  1 00:10 [0;0mFT_CAN_Loopback.FAIL[0m
+-rw-r--r--    1 root     root          315 Jan  1 00:09 [0;0mUBP.FAIL[0m
+-rw-r--r--    1 root     root           58 Jan  1 00:09 [0;0mUSB_2.0_host.FAIL[0m
+-rw-r--r--    1 root     root         1325 Jan  1 00:09 [0;0mVpp.FAIL[0m
+-rw-r--r--    1 root     root          930 Jan  1 00:09 [0;0mWake-Up.FAIL[0m
+-rw-r--r--    1 root     root          934 Jan  1 00:10 [0;0mburnin_summary[0m
+drwxr-xr-x    2 root     root         4096 Jan  1 00:10 [1;34mdata[0m
+
+/mnt/sd/apps/vci-diags/results/results_archive_3/data:
+drwxr-xr-x    2 root     root         4096 Jan  1 00:10 [1;34m.[0m
+drwxr-xr-x    3 root     root         4096 Jan  1 00:10 [1;34m..[0m
+
+/mnt/sd/lost+found:
+drwx------    2 root     root        16384 Jan  1 00:02 [1;34m.[0m
+drwxrwx---    5 root     root         4096 Jan  1 00:08 [1;34m..[0m

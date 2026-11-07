@@ -1,0 +1,658 @@
+# cmd: ls -laR /usr/local 2>/dev/null
+# rc: 0
+
+/usr/local:
+drwxr-xr-x   10 root     root         1024 Jan  1 00:00 [1;34m.[0m
+drwxr-xr-x    8 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         2048 Jan  1 00:00 [1;34mbin[0m
+drwxr-xr-x    3 root     root         4096 Nov  7  2026 [1;34mdata[0m
+lrwxrwxrwx    1 root     root           27 Jan  1 00:00 [1;36mdiags[0m -> [1;34m/etc/vci/config/diagnostics[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34metc[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34minclude[0m
+drwxr-xr-x    5 root     root         1024 Jul 26  2015 [1;34mlib[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mmtd[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34mvar[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mwpa[0m
+
+/usr/local/bin:
+drwxr-xr-x    2 root     root         2048 Jan  1 00:00 [1;34m.[0m
+drwxr-xr-x   10 root     root         1024 Jan  1 00:00 [1;34m..[0m
+-rwxr-xr-x    1 root     root          104 Jul 26  2015 [1;32mbluepin[0m
+-rwxr-xr-x    1 root     root         4104 Jul 26  2015 [1;32mboottime[0m
+-rwxr-xr-x    1 root     root        10728 Jul 26  2015 [1;32mbootvars[0m
+-rw-r--r--    1 root     root          252 Jul 26  2015 [0;0mbootvars.config[0m
+lrwxrwxrwx    1 root     root            8 Jul 26  2015 [1;36mbootvars_read[0m -> [1;32mbootvars[0m
+lrwxrwxrwx    1 root     root            8 Jul 26  2015 [1;36mbootvars_write[0m -> [1;32mbootvars[0m
+-rwxr-xr-x    1 root     root        28944 Jul 26  2015 [1;32mbrctl[0m
+-rwxr-xr-x    1 root     root           70 Jul 26  2015 [1;32mbt-down.sh[0m
+-rwxr-xr-x    1 root     root          268 Jul 26  2015 [1;32mbt-up.sh[0m
+-rwxr-xr-x    1 root     root         8068 Jul 26  2015 [1;32mdbus-cleanup-sockets[0m
+-rwxr-xr-x    1 root     root       427804 Jul 26  2015 [1;32mdbus-daemon[0m
+-rwxr-xr-x    1 root     root        10852 Jul 26  2015 [1;32mdbus-monitor[0m
+-rwxr-xr-x    1 root     root        14244 Jul 26  2015 [1;32mdbus-send[0m
+-rwxr-xr-x    1 root     root         5224 Jul 26  2015 [1;32mdbus-uuidgen[0m
+lrwxrwxrwx    1 root     root           10 Jan  1 00:00 [1;36mdhcpd[0m -> [1;32m/tmp/dhcpd[0m
+-rw-r--r--    1 root     root         1131 Jul 26  2015 [0;0mdhcpd.conf[0m
+-rwxr-xr-x    1 root     root         7543 Jul 26  2015 [1;32metas-usb-mon[0m
+-rwxr-xr-x    1 root     root        10044 Jul 26  2015 [1;32mfpgaloader[0m
+-rwxr-xr-x    1 root     root           91 Jul 26  2015 [1;32mgetcurrentap.sh[0m
+-rwxr-xr-x    1 root     root          754 Jul 26  2015 [1;32mgetversioninfo[0m
+-rwxr-xr-x    1 root     root         8296 Jul 26  2015 [1;32mgpiotool[0m
+-rw-r--r--    1 root     root            0 Jul 26  2015 [0;0mhas-sd-protection[0m
+-rwxr-xr-x    1 root     root        19208 Jul 26  2015 [1;32mhciattach[0m
+-rwxr-xr-x    1 root     root        88268 Jul 26  2015 [1;32mhciconfig[0m
+-rwxr-xr-x    1 root     root        36368 Jul 26  2015 [1;32mhcid[0m
+-rw-r--r--    1 root     root         1268 Jul 26  2015 [0;0mhcid.conf[0m
+-rwxr-xr-x    1 root     root        35976 Jul 26  2015 [1;32mhcitool[0m
+-rwxr-xr-x    1 root     root         4513 Jul 26  2015 [1;32mhostapd.sh[0m
+-rwxr-xr-x    1 root     root        28072 Jul 26  2015 [1;32mifrename[0m
+-rwxr-xr-x    1 root     root         4794 Jul 26  2015 [1;32minit_script.sh[0m
+-rwxr-xr-x    1 root     root        35116 Jul 26  2015 [1;32minit_script_helper.sh[0m
+-rwxr-xr-x    1 root     root         3582 Jul 26  2015 [1;32minit_script_testmode.sh[0m
+-rwxr-xr-x    1 root     root         1090 Jul 26  2015 [1;32mispID[0m
+-rwxr-xr-x    1 root     root        27928 Jul 26  2015 [1;32miwconfig[0m
+-rwxr-xr-x    1 root     root        14160 Jul 26  2015 [1;32miwevent[0m
+-rwxr-xr-x    1 root     root         9976 Jul 26  2015 [1;32miwgetid[0m
+-rwxr-xr-x    1 root     root        33404 Jul 26  2015 [1;32miwlist[0m
+-rwxr-xr-x    1 root     root        14168 Jul 26  2015 [1;32miwpriv[0m
+-rwxr-xr-x    1 root     root         9096 Jul 26  2015 [1;32miwspy[0m
+-rwxr-xr-x    1 root     root          207 Jul 26  2015 [1;32mkickResponder.sh[0m
+-rwxr-xr-x    1 root     root        10316 Jul 26  2015 [1;32ml2ping[0m
+-rwxr-xr-x    1 root     root        13132 Jul 26  2015 [1;32mlinuxvars[0m
+-rw-r--r--    1 root     root          290 Jul 26  2015 [0;0mlinuxvars.config[0m
+lrwxrwxrwx    1 root     root            9 Jul 26  2015 [1;36mlinuxvars_erase[0m -> [1;32mlinuxvars[0m
+lrwxrwxrwx    1 root     root            9 Jul 26  2015 [1;36mlinuxvars_read[0m -> [1;32mlinuxvars[0m
+lrwxrwxrwx    1 root     root            9 Jul 26  2015 [1;36mlinuxvars_write[0m -> [1;32mlinuxvars[0m
+lrwxrwxrwx    1 root     root            9 Jul 26  2015 [1;36mlinuxvars_writem[0m -> [1;32mlinuxvars[0m
+-rwxr-xr-x    1 root     root         6447 Jul 26  2015 [1;32mmDNSIFMonitor.gz[0m
+-rwxr-xr-x    1 root     root       137533 Jul 26  2015 [1;32mmDNSResponderPosix.gz[0m
+-rwxr-xr-x    1 root     root         8444 Jul 26  2015 [1;32mmacaddr[0m
+-rw-r--r--    1 root     root          140 Jul 26  2015 [0;0mmacaddr.config[0m
+-rwxr-xr-x    1 root     root          124 Jul 26  2015 [1;32mmdiinfo.sh[0m
+-rwxr-xr-x    1 root     root        44208 Jul 26  2015 [1;32mmenu[0m
+-rwxr-xr-x    1 root     root        15740 Jul 26  2015 [1;32mmkimage[0m
+-rwxr-xr-x    1 root     root         2398 Jul 26  2015 [1;32mmonitor.ini[0m
+-rw-r--r--    1 root     root           38 Jul 26  2015 [0;0mmotd[0m
+-rwxr-xr-x    1 root     root        11148 Jul 26  2015 [1;32mmuxutil[0m
+-rwxr-xr-x    1 root     root          905 Jul 26  2015 [1;32mnetdrivers.sh[0m
+-rwxr-xr-x    1 root     root        20148 Jul 26  2015 [1;32mpand[0m
+-rwxr-xr-x    1 root     root          421 Jul 26  2015 [1;32mparse-iwlist.sh[0m
+-rwxr-xr-x    1 root     root          317 Jul 26  2015 [1;32mparse_iwconfig[0m
+-rwxr-xr-x    1 1001     1001       959771 Jul 26  2015 [1;32mpdu-main.gz[0m
+-rwxr-xr-x    1 root     root         8632 Jul 26  2015 [1;32mpngpong[0m
+-rwxr-xr-x    1 root     root        58572 Jul 26  2015 [1;32mpost[0m
+-rw-r--r--    1 root     root          467 Jul 26  2015 [0;0mpost.conf[0m
+-rwxr-xr-x    1 root     root        17084 Jul 26  2015 [1;32mpowermod[0m
+-rwxr-xr-x    1 root     root        14144 Jul 26  2015 [1;32mprogress[0m
+-rwxr-xr-x    1 root     root        19116 Jul 26  2015 [1;32msdpd[0m
+-rwxr-xr-x    1 root     root        52804 Jul 26  2015 [1;32msdptool[0m
+-rwxr-xr-x    1 root     root         8112 Jul 26  2015 [1;32mserialnum[0m
+-rw-r--r--    1 root     root          140 Jul 26  2015 [0;0mserialnum.config[0m
+-rwxr-xr-x    1 root     root          143 Jul 26  2015 [1;32msignalResponder.sh[0m
+-rwxr-xr-x    1 root     root          702 Jul 26  2015 [1;32mstart-pdu.sh[0m
+-rwxr-xr-x    1 root     root         1860 Jul 26  2015 [1;32mstart_bluetooth.sh[0m
+-rwxr-xr-x    1 root     root          521 Jul 26  2015 [1;32mstop-pdu.sh[0m
+-rwxr-xr-x    1 root     root          526 Jul 26  2015 [1;32mstop_bluetooth.sh[0m
+-rwxr-xr-x    1 root     root          489 Jul 26  2015 [1;32mtelnetd.sh-disable[0m
+-rwxr-xr-x    1 root     root         4912 Jul 26  2015 [1;32muartutil[0m
+-rw-r--r--    1 root     root          156 Jul 26  2015 [0;0mudhcpd.wlan0.conf[0m
+-rw-r--r--    1 root     root          338 Jul 26  2015 [0;0musb-dhcpd-conf[0m
+-rwxr-xr-x    1 root     root      1994276 Jul 26  2015 [1;32mvci-service[0m
+-rw-r--r--    1 root     root            0 Jul 26  2015 [0;0mvci-type-std[0m
+-rwxr-xr-x    1 root     root         1023 Jul 26  2015 [1;32mviodrivers.sh[0m
+-rwxr-xr-x    1 root     root         1338 Jul 26  2015 [1;32mviodrivers2.sh[0m
+
+/usr/local/data:
+drwxr-xr-x    3 root     root         4096 Nov  7  2026 [1;34m.[0m
+drwxr-xr-x   10 root     root         1024 Jan  1 00:00 [1;34m..[0m
+-rw-r--r--    1 root     root          231 Nov  7  2026 [0;0mhistory.bin[0m
+-rw-r--r--    1 root     root           62 Nov  7  2026 [0;0mhistory.md5[0m
+drwx------    2 root     root        16384 Jan  1 00:03 [1;34mlost+found[0m
+
+/usr/local/data/lost+found:
+drwx------    2 root     root        16384 Jan  1 00:03 [1;34m.[0m
+drwxr-xr-x    3 root     root         4096 Nov  7  2026 [1;34m..[0m
+
+/usr/local/etc:
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   10 root     root         1024 Jan  1 00:00 [1;34m..[0m
+-rw-r--r--    1 root     root           31 Jul 26  2015 [0;0mbootsteps.txt[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34mdbus-1[0m
+
+/usr/local/etc/dbus-1:
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         2126 Jul 26  2015 [0;0msystem.conf[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34msystem.d[0m
+
+/usr/local/etc/dbus-1/system.d:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root          892 Jul 26  2015 [0;0mbluetooth.conf[0m
+
+/usr/local/include:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   10 root     root         1024 Jan  1 00:00 [1;34m..[0m
+
+/usr/local/lib:
+drwxr-xr-x    5 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   10 root     root         1024 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34mbluetooth[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mfirmware[0m
+lrwxrwxrwx    1 root     root           17 Jul 26  2015 [1;36mlibbluetooth.so[0m -> [1;32mlibbluetooth.so.2[0m
+lrwxrwxrwx    1 root     root           21 Jul 26  2015 [1;36mlibbluetooth.so.2[0m -> [1;32mlibbluetooth.so.2.9.6[0m
+-r-xr-xr-x    1 root     root        70796 Jul 26  2015 [1;32mlibbluetooth.so.2.9.6[0m
+lrwxrwxrwx    1 root     root           28 Jul 26  2015 [1;36mlibboost_date_time.so[0m -> [1;32mlibboost_date_time.so.1.46.1[0m
+-r-xr-xr-x    1 root     root        61056 Jul 26  2015 [1;32mlibboost_date_time.so.1.46.1[0m
+lrwxrwxrwx    1 root     root           29 Jul 26  2015 [1;36mlibboost_filesystem.so[0m -> [1;32mlibboost_filesystem.so.1.46.1[0m
+-r-xr-xr-x    1 root     root       130708 Jul 26  2015 [1;32mlibboost_filesystem.so.1.46.1[0m
+lrwxrwxrwx    1 root     root           25 Jul 26  2015 [1;36mlibboost_system.so[0m -> [1;32mlibboost_system.so.1.46.1[0m
+-r-xr-xr-x    1 root     root        10168 Jul 26  2015 [1;32mlibboost_system.so.1.46.1[0m
+lrwxrwxrwx    1 root     root           25 Jul 26  2015 [1;36mlibboost_thread.so[0m -> [1;32mlibboost_thread.so.1.46.1[0m
+-r-xr-xr-x    1 root     root        86108 Jul 26  2015 [1;32mlibboost_thread.so.1.46.1[0m
+lrwxrwxrwx    1 root     root           14 Jul 26  2015 [1;36mlibdbus-1.so[0m -> [1;32mlibdbus-1.so.3[0m
+lrwxrwxrwx    1 root     root           18 Jul 26  2015 [1;36mlibdbus-1.so.3[0m -> [1;32mlibdbus-1.so.3.4.0[0m
+-r-xr-xr-x    1 root     root       336260 Jul 26  2015 [1;32mlibdbus-1.so.3.4.0[0m
+lrwxrwxrwx    1 root     root           13 Jul 26  2015 [1;36mlibexpat.so[0m -> [1;32mlibexpat.so.1[0m
+lrwxrwxrwx    1 root     root           17 Jul 26  2015 [1;36mlibexpat.so.1[0m -> [1;32mlibexpat.so.1.0.0[0m
+-r-xr-xr-x    1 root     root       109796 Jul 26  2015 [1;32mlibexpat.so.1.0.0[0m
+lrwxrwxrwx    1 root     root           20 Jul 26  2015 [1;36mlibfreetype.so[0m -> [1;32mlibfreetype.so.6.8.1[0m
+lrwxrwxrwx    1 root     root           20 Jul 26  2015 [1;36mlibfreetype.so.6[0m -> [1;32mlibfreetype.so.6.8.1[0m
+-r-xr-xr-x    1 root     root       422428 Jul 26  2015 [1;32mlibfreetype.so.6.8.1[0m
+-r-xr-xr-x    1 root     root        39276 Jul 26  2015 [1;32mlibiw.so.29[0m
+lrwxrwxrwx    1 root     root           18 Jul 26  2015 [1;36mlibpng15.so[0m -> [1;32mlibpng15.so.15.9.0[0m
+lrwxrwxrwx    1 root     root           18 Jul 26  2015 [1;36mlibpng15.so.15[0m -> [1;32mlibpng15.so.15.9.0[0m
+-r-xr-xr-x    1 root     root       135696 Jul 26  2015 [1;32mlibpng15.so.15.9.0[0m
+-r-xr-xr-x    1 root     root        25352 Jul 26  2015 [1;32mlibsglarm32-2.30.0.0.so[0m
+lrwxrwxrwx    1 root     root           23 Jul 26  2015 [1;36mlibsglarm32.so[0m -> [1;32mlibsglarm32-2.30.0.0.so[0m
+lrwxrwxrwx    1 root     root           14 Jul 26  2015 [1;36mlibstdc++.so[0m -> [1;32mlibstdc++.so.6[0m
+lrwxrwxrwx    1 root     root           18 Jul 26  2015 [1;36mlibstdc++.so.6[0m -> [1;32mlibstdc++.so.6.0.9[0m
+-r-xr-xr-x    1 root     root       816192 Jul 26  2015 [1;32mlibstdc++.so.6.0.9[0m
+lrwxrwxrwx    1 root     root           15 Jul 26  2015 [1;36mlibusb-0.1.so[0m -> [1;32mlibusb-0.1.so.4[0m
+lrwxrwxrwx    1 root     root           19 Jul 26  2015 [1;36mlibusb-0.1.so.4[0m -> [1;32mlibusb-0.1.so.4.4.4[0m
+-r-xr-xr-x    1 root     root        28200 Jul 26  2015 [1;32mlibusb-0.1.so.4.4.4[0m
+lrwxrwxrwx    1 root     root           15 Jul 26  2015 [1;36mlibusb-1.0.so[0m -> [1;32mlibusb-1.0.so.0[0m
+lrwxrwxrwx    1 root     root           19 Jul 26  2015 [1;36mlibusb-1.0.so.0[0m -> [1;32mlibusb-1.0.so.0.0.0[0m
+-r-xr-xr-x    1 root     root        40372 Jul 26  2015 [1;32mlibusb-1.0.so.0.0.0[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34mmodules[0m
+
+/usr/local/lib/bluetooth:
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    5 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mplugins[0m
+
+/usr/local/lib/bluetooth/plugins:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m..[0m
+-r-xr-xr-x    1 root     root        37296 Jul 26  2015 [1;32mlibinput.so[0m
+-r-xr-xr-x    1 root     root        41948 Jul 26  2015 [1;32mlibnetwork.so[0m
+-r-xr-xr-x    1 root     root        36452 Jul 26  2015 [1;32mlibserial.so[0m
+
+/usr/local/lib/firmware:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    5 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        97128 Jul 26  2015 [0;0mlibertas_cs.fw[0m
+-rw-r--r--    1 root     root         2132 Jul 26  2015 [0;0mlibertas_cs_helper.fw[0m
+
+/usr/local/lib/modules:
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    5 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m2.6.24.4-etas-08apr25[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25:
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m..[0m
+lrwxrwxrwx    1 root     root           44 Jul 26  2015 [1;36mbuild[0m -> [1;36m/home/vcibuilder/builds/trunk/linux-2.6.24.4[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34mextra[0m
+drwxr-xr-x    5 root     root         1024 Jul 26  2015 [1;34mkernel[0m
+-rw-r--r--    1 root     root        36419 Jul 26  2015 [0;0mmodules.alias[0m
+-rw-r--r--    1 root     root        43668 Jul 26  2015 [0;0mmodules.alias.bin[0m
+-rw-r--r--    1 root     root           69 Jul 26  2015 [0;0mmodules.ccwmap[0m
+-rw-r--r--    1 root     root        18581 Jul 26  2015 [0;0mmodules.dep[0m
+-rw-r--r--    1 root     root        12954 Jul 26  2015 [0;0mmodules.dep.bin[0m
+-rw-r--r--    1 root     root           73 Jul 26  2015 [0;0mmodules.ieee1394map[0m
+-rw-r--r--    1 root     root          217 Jul 26  2015 [0;0mmodules.inputmap[0m
+-rw-r--r--    1 root     root           81 Jul 26  2015 [0;0mmodules.isapnpmap[0m
+-rw-r--r--    1 root     root           74 Jul 26  2015 [0;0mmodules.ofmap[0m
+-rw-r--r--    1 root     root           99 Jul 26  2015 [0;0mmodules.pcimap[0m
+-rw-r--r--    1 root     root           43 Jul 26  2015 [0;0mmodules.seriomap[0m
+-rw-r--r--    1 root     root        26456 Jul 26  2015 [0;0mmodules.symbols[0m
+-rw-r--r--    1 root     root        34488 Jul 26  2015 [0;0mmodules.symbols.bin[0m
+-rw-r--r--    1 root     root        83087 Jul 26  2015 [0;0mmodules.usbmap[0m
+lrwxrwxrwx    1 root     root           44 Jul 26  2015 [1;36msource[0m -> [1;36m/home/vcibuilder/builds/trunk/linux-2.6.24.4[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra:
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mdac_adc[0m
+-rw-r--r--    1 root     root        13968 Jul 26  2015 [0;0mecp_lib.ko[0m
+-rw-r--r--    1 root     root        16701 Jul 26  2015 [0;0metas-fpga.ko[0m
+-rw-r--r--    1 root     root         1634 Jul 26  2015 [0;0metas-irq.ko[0m
+-rw-r--r--    1 root     root        16635 Jul 26  2015 [0;0metas-led.ko[0m
+-rw-r--r--    1 root     root         8271 Jul 26  2015 [0;0metas-simple-usb-trig-switch.ko[0m
+-rw-r--r--    1 root     root        14898 Jul 26  2015 [0;0metas-speaker.ko[0m
+-rw-r--r--    1 root     root         5548 Jul 26  2015 [0;0metas-status.ko[0m
+-rw-r--r--    1 root     root         1636 Jul 26  2015 [0;0mgvci_jtag.ko[0m
+-rw-r--r--    1 root     root         3290 Jul 26  2015 [0;0mgvci_keys.ko[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34minput[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mj1850-core[0m
+-rw-r--r--    1 root     root        10713 Jul 26  2015 [0;0mkts-cable-detect.ko[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mmux[0m
+-rw-r--r--    1 root     root         1636 Jul 26  2015 [0;0mov_detect.ko[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mp-uart[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mpower[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mpwr_detect[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mrtc[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34msja1000[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mspi[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mtimers[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mvideo[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/dac_adc:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        36404 Jul 26  2015 [0;0metas-dac.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/input:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         5311 Jul 26  2015 [0;0metas-fpga-keys.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/j1850-core:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        48534 Jul 26  2015 [0;0metas-j1850.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/mux:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root       152999 Jul 26  2015 [0;0mbosch-board-if.ko[0m
+-rw-r--r--    1 root     root       559056 Jul 26  2015 [0;0metas-mux.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/p-uart:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root       361886 Jul 26  2015 [0;0metas-prot-driver.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/power:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         3475 Jul 26  2015 [0;0metas-supercap.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/pwr_detect:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        18883 Jul 26  2015 [0;0metas-pwrdet.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/rtc:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        10530 Jul 26  2015 [0;0metas-rtc.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/sja1000:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        62552 Jul 26  2015 [0;0metas-sja1000.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/spi:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        92339 Jul 26  2015 [0;0mbosch-vci-spi.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/timers:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        15098 Jul 26  2015 [0;0metas-timers.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/extra/video:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        27242 Jul 26  2015 [0;0metas-st7528fb.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel:
+drwxr-xr-x    5 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mcrypto[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34mdrivers[0m
+drwxr-xr-x    9 root     root         1024 Jul 26  2015 [1;34mnet[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/crypto:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    5 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        20666 Jul 26  2015 [0;0maes_generic.ko[0m
+-rw-r--r--    1 root     root         3124 Jul 26  2015 [0;0marc4.ko[0m
+-rw-r--r--    1 root     root         7565 Jul 26  2015 [0;0mblkcipher.ko[0m
+-rw-r--r--    1 root     root         5509 Jul 26  2015 [0;0mcbc.ko[0m
+-rw-r--r--    1 root     root        17081 Jul 26  2015 [0;0mcrypto_algapi.ko[0m
+-rw-r--r--    1 root     root         3248 Jul 26  2015 [0;0mcrypto_hash.ko[0m
+-rw-r--r--    1 root     root         4395 Jul 26  2015 [0;0mcryptomgr.ko[0m
+-rw-r--r--    1 root     root         4339 Jul 26  2015 [0;0mdeflate.ko[0m
+-rw-r--r--    1 root     root        20026 Jul 26  2015 [0;0mdes_generic.ko[0m
+-rw-r--r--    1 root     root         4354 Jul 26  2015 [0;0mecb.ko[0m
+-rw-r--r--    1 root     root         5868 Jul 26  2015 [0;0mhmac.ko[0m
+-rw-r--r--    1 root     root         6128 Jul 26  2015 [0;0mmd5.ko[0m
+-rw-r--r--    1 root     root         3914 Jul 26  2015 [0;0msha1_generic.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers:
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    5 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mblock[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mbluetooth[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34mhid[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mhwmon[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34mi2c[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34minput[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34mnet[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mpcmcia[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mscsi[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mserial[0m
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34musb[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34mvideo[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/block:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        17218 Jul 26  2015 [0;0mloop.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/bluetooth:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        20345 Jul 26  2015 [0;0mhci_uart.ko[0m
+-rw-r--r--    1 root     root        16176 Jul 26  2015 [0;0mhci_usb.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/hid:
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        70564 Jul 26  2015 [0;0mhid.ko[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34musbhid[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/hid/usbhid:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        25487 Jul 26  2015 [0;0musbhid.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/hwmon:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         4150 Jul 26  2015 [0;0mhwmon.ko[0m
+-rw-r--r--    1 root     root         8973 Jul 26  2015 [0;0mlm75.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/i2c:
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mbusses[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mchips[0m
+-rw-r--r--    1 root     root        23050 Jul 26  2015 [0;0mi2c-core.ko[0m
+-rw-r--r--    1 root     root         8821 Jul 26  2015 [0;0mi2c-dev.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/i2c/busses:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         8055 Jul 26  2015 [0;0mi2c-pxa.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/i2c/chips:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        12986 Jul 26  2015 [0;0mtmp101.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/input:
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        11559 Jul 26  2015 [0;0mevdev.ko[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mkeyboard[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/input/keyboard:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         5043 Jul 26  2015 [0;0mgpio_keys.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/net:
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34musb[0m
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34mwireless[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/net/usb:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        19016 Jul 26  2015 [0;0masix.ko[0m
+-rw-r--r--    1 root     root         8215 Jul 26  2015 [0;0mmcs7830.ko[0m
+-rw-r--r--    1 root     root        32176 Jul 26  2015 [0;0mpegasus.ko[0m
+-rw-r--r--    1 root     root        18368 Jul 26  2015 [0;0musbnet.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/net/wireless:
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mlibertas[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mrtl8192cu[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mrtl8192eu[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mrtl8712[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/net/wireless/libertas:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root       205265 Jul 26  2015 [0;0mlibertas.ko[0m
+-rw-r--r--    1 root     root        15678 Jul 26  2015 [0;0mlibertas_cs.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/net/wireless/rtl8192cu:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root       208902 Jul 26  2015 [0;0mr8192cu.ko.gz[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/net/wireless/rtl8192eu:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root       339936 Jul 26  2015 [0;0mr8192eu.ko.gz[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/net/wireless/rtl8712:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root       141205 Jul 26  2015 [0;0mr8712u.ko.gz[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/pcmcia:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        31831 Jul 26  2015 [0;0mpcmcia.ko[0m
+-rw-r--r--    1 root     root        36415 Jul 26  2015 [0;0mpcmcia_core.ko[0m
+-rw-r--r--    1 root     root        14336 Jul 26  2015 [0;0mpxa2xx_core.ko[0m
+-rw-r--r--    1 root     root         5768 Jul 26  2015 [0;0mpxa2xx_cs.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/scsi:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root       116101 Jul 26  2015 [0;0mscsi_mod.ko[0m
+-rw-r--r--    1 root     root         2334 Jul 26  2015 [0;0mscsi_wait_scan.ko[0m
+-rw-r--r--    1 root     root        25841 Jul 26  2015 [0;0msd_mod.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/serial:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        25321 Jul 26  2015 [0;0m8250.ko[0m
+-rw-r--r--    1 root     root        31450 Jul 26  2015 [0;0mserial_cs.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/usb:
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34mgadget[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34mhost[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mserial[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mstorage[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/usb/gadget:
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        33594 Jul 26  2015 [0;0mg_ether.ko[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34misp1582[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34misp1582_1763[0m
+-rw-r--r--    1 root     root        26687 Jul 26  2015 [0;0mpxa27x_udc.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/usb/gadget/isp1582:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        22967 Jul 26  2015 [0;0mISP1582_udc.ko[0m
+-rw-r--r--    1 root     root        38088 Jul 26  2015 [0;0mg_ether_isp.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/usb/gadget/isp1582_1763:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        24530 Jul 26  2015 [0;0mISP1582_1763_udc.ko[0m
+-rw-r--r--    1 root     root        38284 Jul 26  2015 [0;0mg_ether_isp1763.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/usb/host:
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34misp1763[0m
+-rw-r--r--    1 root     root        25741 Jul 26  2015 [0;0mohci-hcd.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/usb/host/isp1763:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        27461 Jul 26  2015 [0;0misp1763_base.ko[0m
+-rw-r--r--    1 root     root        24873 Jul 26  2015 [0;0misp1763_hcd.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/usb/serial:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        24509 Jul 26  2015 [0;0mpl2303.ko[0m
+-rw-r--r--    1 root     root        34005 Jul 26  2015 [0;0musbserial.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/usb/storage:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    6 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        52971 Jul 26  2015 [0;0musb-storage.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/video:
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   14 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mbacklight[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mconsole[0m
+-rw-r--r--    1 root     root        37276 Jul 26  2015 [0;0mfb.ko[0m
+-rw-r--r--    1 root     root         3009 Jul 26  2015 [0;0mfb_sys_fops.ko[0m
+-rw-r--r--    1 root     root         4267 Jul 26  2015 [0;0msyscopyarea.ko[0m
+-rw-r--r--    1 root     root         4887 Jul 26  2015 [0;0msysfillrect.ko[0m
+-rw-r--r--    1 root     root         3802 Jul 26  2015 [0;0msysimgblt.ko[0m
+-rw-r--r--    1 root     root         7853 Jul 26  2015 [0;0mvfb.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/video/backlight:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         6453 Jul 26  2015 [0;0mbacklight.ko[0m
+-rw-r--r--    1 root     root         6048 Jul 26  2015 [0;0mlcd.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/drivers/video/console:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         5990 Jul 26  2015 [0;0mbitblit.ko[0m
+-rw-r--r--    1 root     root        37471 Jul 26  2015 [0;0mfbcon.ko[0m
+-rw-r--r--    1 root     root         6930 Jul 26  2015 [0;0mfont.ko[0m
+-rw-r--r--    1 root     root         2889 Jul 26  2015 [0;0msoftcursor.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/net:
+drwxr-xr-x    9 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    5 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m802[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34mbluetooth[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mbridge[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mieee80211[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mipv4[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mllc[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mwireless[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/net/802:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    9 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         2863 Jul 26  2015 [0;0mp8022.ko[0m
+-rw-r--r--    1 root     root         5040 Jul 26  2015 [0;0mpsnap.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/net/bluetooth:
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    9 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        67051 Jul 26  2015 [0;0mbluetooth.ko[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mbnep[0m
+-rw-r--r--    1 root     root        26603 Jul 26  2015 [0;0ml2cap.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/net/bluetooth/bnep:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        14428 Jul 26  2015 [0;0mbnep.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/net/bridge:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    9 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        51880 Jul 26  2015 [0;0mbridge.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/net/ieee80211:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    9 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        32134 Jul 26  2015 [0;0mieee80211.ko[0m
+-rw-r--r--    1 root     root         6975 Jul 26  2015 [0;0mieee80211_crypt.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/net/ipv4:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    9 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         6869 Jul 26  2015 [0;0mah4.ko[0m
+-rw-r--r--    1 root     root         8037 Jul 26  2015 [0;0mesp4.ko[0m
+-rw-r--r--    1 root     root        12807 Jul 26  2015 [0;0minet_diag.ko[0m
+-rw-r--r--    1 root     root         8098 Jul 26  2015 [0;0mipcomp.ko[0m
+-rw-r--r--    1 root     root         6354 Jul 26  2015 [0;0mtcp_bic.ko[0m
+-rw-r--r--    1 root     root         2782 Jul 26  2015 [0;0mtcp_diag.ko[0m
+-rw-r--r--    1 root     root         6020 Jul 26  2015 [0;0mtcp_htcp.ko[0m
+-rw-r--r--    1 root     root         4340 Jul 26  2015 [0;0mtcp_westwood.ko[0m
+-rw-r--r--    1 root     root         4404 Jul 26  2015 [0;0mtunnel4.ko[0m
+-rw-r--r--    1 root     root         3830 Jul 26  2015 [0;0mxfrm4_mode_beet.ko[0m
+-rw-r--r--    1 root     root         3215 Jul 26  2015 [0;0mxfrm4_mode_transport.ko[0m
+-rw-r--r--    1 root     root         3746 Jul 26  2015 [0;0mxfrm4_mode_tunnel.ko[0m
+-rw-r--r--    1 root     root         3853 Jul 26  2015 [0;0mxfrm4_tunnel.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/net/llc:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    9 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root         8490 Jul 26  2015 [0;0mllc.ko[0m
+
+/usr/local/lib/modules/2.6.24.4-etas-08apr25/kernel/net/wireless:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    9 root     root         1024 Jul 26  2015 [1;34m..[0m
+-rw-r--r--    1 root     root        15235 Jul 26  2015 [0;0mcfg80211.ko[0m
+
+/usr/local/mtd:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   10 root     root         1024 Jan  1 00:00 [1;34m..[0m
+-rwxr-xr-x    1 root     root         4800 Jul 26  2015 [1;32mflash_erase[0m
+-rwxr-xr-x    1 root     root        12040 Jul 26  2015 [1;32mflash_eraseall[0m
+-rwxr-xr-x    1 root     root         3392 Jul 26  2015 [1;32mflash_info[0m
+-rwxr-xr-x    1 root     root         4500 Jul 26  2015 [1;32mflash_lock[0m
+-rwxr-xr-x    1 root     root         3524 Jul 26  2015 [1;32mflash_unlock[0m
+-rwxr-xr-x    1 root     root         8444 Jul 26  2015 [1;32mflashcp[0m
+-rwxr-xr-x    1 root     root         8116 Jul 26  2015 [1;32mmtd_debug[0m
+
+/usr/local/var:
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   10 root     root         1024 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34mlib[0m
+drwxr-xr-x    3 root     root         1024 Jan  1 00:00 [1;34mrun[0m
+
+/usr/local/var/lib:
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mdbus[0m
+
+/usr/local/var/lib/dbus:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34m..[0m
+
+/usr/local/var/run:
+drwxr-xr-x    3 root     root         1024 Jan  1 00:00 [1;34m.[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34m..[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mdbus[0m
+-rw-r--r--    1 root     root            5 Jan  1 00:00 [0;0mftpd.pid[0m
+
+/usr/local/var/run/dbus:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jan  1 00:00 [1;34m..[0m
+
+/usr/local/wpa:
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   10 root     root         1024 Jan  1 00:00 [1;34m..[0m
+-rwxr-xr-x    1 root     root        29192 Jul 26  2015 [1;32mwpa_cli[0m
+-rwxr-xr-x    1 root     root        20408 Jul 26  2015 [1;32mwpa_passphrase[0m
+-rwxr-xr-x    1 root     root       207988 Jul 26  2015 [1;32mwpa_supplicant[0m

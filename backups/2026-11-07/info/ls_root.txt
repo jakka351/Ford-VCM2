@@ -1,0 +1,25 @@
+# cmd: ls -la /
+# rc: 0
+
+drwxr-xr-x   19 1001     1001         1024 Jan  1 00:04 [1;34m.[0m
+drwxr-xr-x   19 1001     1001         1024 Jan  1 00:04 [1;34m..[0m
+-rw-------    1 root     root         1045 Jan  1 00:05 [0;0m.bash_history[0m
+drwxr-xr-x    2 root     root         2048 Jul 26  2015 [1;34mbin[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mbuild[0m
+drwxr-xr-x    4 root     root         3072 Jan  1 00:00 [1;34mdev[0m
+drwxr-xr-x   16 root     root         1024 Jan  1 00:00 [1;34metc[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34mlib[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mlibexec[0m
+lrwxrwxrwx    1 root     root           10 Jul 26  2015 [1;36mlinuxrc[0m -> [1;32m/sbin/init[0m
+-rwxr-xr-x    1 root     root         4720 Jul 26  2015 [1;32mloadsdrc[0m
+drwxr-xr-x    2 root     root        12288 Jul 26  2015 [1;34mlost+found[0m
+drwxr-xr-x    3 root     root         1024 Jan  1 00:00 [1;34mmnt[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34moldroot[0m
+dr-xr-xr-x   47 root     root            0 Jan  1 00:00 [1;34mproc[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mpublic[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34msbin[0m
+drwxr-xr-x   14 root     root            0 Jan  1 00:00 [1;34msys[0m
+drwxrwxrwt    4 root     root          260 Jan  1 00:00 [1;34mtmp[0m
+drwxr-xr-x    8 root     root         1024 Jul 26  2015 [1;34musr[0m
+drwxr-xr-x   12 root     root         1024 Jan  1 00:00 [1;34mvar[0m
+drwxr-xr-x    6 admin    1000         1024 Jan  1 00:00 [1;34mweb[0m

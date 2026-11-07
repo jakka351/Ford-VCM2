@@ -1,0 +1,332 @@
+# cmd: dmesg
+# rc: 0
+
+ Probing 0x0c000000: MSC = 0x776c 16 bit <7>busy
+<7>* Probing 0x10000000: MSC = 0x7884 32 bit <7>
+<7>CFI: Found no flash0 device at location zero
+<7>* Probing 0x14000000: MSC = 0x7bc9 16 bit <7>busy
+<6>flash0: Found 1 x16 devices at 0x0 in 16-bit bank
+<4> Intel/Sharp Extended Query Table at 0x010A
+<4> Intel/Sharp Extended Query Table at 0x010A
+<4> Intel/Sharp Extended Query Table at 0x010A
+<4> Intel/Sharp Extended Query Table at 0x010A
+<4> Intel/Sharp Extended Query Table at 0x010A
+<6>Using buffer write method
+<5>cfi_cmdset_0001: Erase suspend on write enabled
+<7>erase region 0: offset=0x0,size=0x20000,blocks=255
+<7>erase region 1: offset=0x1fe0000,size=0x8000,blocks=4
+<6>KARO flash: CFI device at 0x00000000, 32MiB, 16-bit
+<5>13 cmdlinepart partitions found on MTD device flash0
+<5>KARO flash: using dynamic partition definition
+<5>Creating 13 MTD partitions on "flash0":
+<5>0x00000000-0x00040000 : "fsboot"
+<5>0x00040000-0x00080000 : "boot"
+<5>0x00080000-0x000a0000 : "bootvars"
+<5>0x000a0000-0x00140000 : "fpga"
+<5>0x00140000-0x002c0000 : "linux2"
+<5>0x002c0000-0x008c0000 : "initrd2"
+<5>0x008c0000-0x00bc0000 : "linux1"
+<5>0x00bc0000-0x01ea0000 : "initrd1"
+<5>0x01ea0000-0x01fa0000 : "jffs2"
+<5>0x01fa0000-0x01fc0000 : "linuxvars1"
+<5>0x01fc0000-0x01fe0000 : "linuxvars2"
+<5>0x01ff0000-0x01ff8000 : "serialnum"
+<5>0x01ff8000-0x02000000 : "macaddress"
+<7>PM: Adding info for No Bus:usbmon0
+<7>PM: Adding info for No Bus:mice
+<6>mice: PS/2 mouse device common for all mice
+<6>Run Mode clock: 208.00MHz (*16)
+<6>Turbo Mode clock: 416.00MHz (*2.0, active)
+<6>Memory clock: 208.00MHz (/2)
+<6>System bus clock: 208.00MHz 
+<7>Verified CPU policy: 13000 kHz min to 520001 kHz max: 0
+<7>Verified CPU policy: 13000 kHz min to 520001 kHz max: 0
+<6>Changing CPU frequency from 416 MHz to 520 MHz, (SDRAM 104.00 MHz FLASH 52.00 MHz)
+<6>Run Mode clock: 208.00MHz (*16)
+<6>Turbo Mode clock: 520.00MHz (*2.5, active)
+<6>Memory clock: 208.00MHz (/2)
+<6>System bus clock: 208.00MHz 
+<4>pxamci_probe: irq = 23
+<6>karo_read_board_type: cmdline board_id: 0x1, type OTHER: 2
+<7>PM: Adding info for No Bus:mmc0
+<7>mmc_power_off: timestamp 4658542
+<7>karo_mci_setpower: off
+<6>TCP cubic registered
+<6>NET: Registered protocol family 1
+<6>NET: Registered protocol family 17
+<6>XScale iWMMXt coprocessor detected.
+<4>karo_freq_to_voltage: Freq: 520.000(416.000..520.000)MHz, core voltage 1.450
+<4>karo_pm_init: Registering core power change notifier
+<4>karo_pm_init: skipping initial set_core(1450)
+<5>RAMDISK: ext2 filesystem found at block 0
+<5>RAMDISK: Loading 18432KiB [1 disk] into ram disk... |/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\done.
+<4>VFS: Mounted root (ext2 filesystem).
+<6>Freeing init memory: 100K
+<7>mmc_power_up: timestamp 5115293
+<7>karo_mci_setpower: on
+<7>karo_mci_setpower: on
+<6>mmc0: new SDHC card at address aaaa
+<7>PM: Adding info for mmc:mmc0:aaaa
+<6>mmcblk0: mmc0:aaaa SU04G 3872256KiB 
+<6> mmcblk0: p1 p2 p3
+<6>kjournald starting.  Commit interval 5 seconds
+<4>EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+<6>EXT3 FS on mmcblk0p1, internal journal
+<6>EXT3-fs: recovery complete.
+<6>EXT3-fs: mounted filesystem with ordered data mode.
+<6>kjournald starting.  Commit interval 5 seconds
+<6>EXT3-fs: mounted filesystem with ordered data mode.
+<6>kjournald starting.  Commit interval 5 seconds
+<6>EXT3 FS on mmcblk0p2, internal journal
+<6>EXT3-fs: recovery complete.
+<6>EXT3-fs: mounted filesystem with ordered data mode.
+<7>ohci_hcd: 2006 August 04 USB 1.1 'Open' Host Controller (OHCI) Driver
+<4>Running inf->init(dev); for USB Host INIT -- JLS 
+<6>karo_ohci_init(): placeholder
+<4>pxa27x_ohci: setting no current protection.
+<6>pxa27x-ohci pxa27x-ohci: PXA27x OHCI
+<7>PM: Adding info for No Bus:usbmon1
+<6>pxa27x-ohci pxa27x-ohci: new USB bus registered, assigned bus number 1
+<6>pxa27x-ohci pxa27x-ohci: irq 3, io mem 0x4c000000
+<7>PM: Adding info for usb:usb1
+<7>PM: Adding info for No Bus:usbdev1.1_ep00
+<6>usb usb1: configuration #1 chosen from 1 choice
+<7>PM: Adding info for usb:1-0:1.0
+<6>hub 1-0:1.0: USB hub found
+<6>hub 1-0:1.0: 3 ports detected
+<7>PM: Adding info for No Bus:usbdev1.1_ep81
+<7>PM: Adding info for No Bus:usbdev1.1
+<6>isp1763_plat_probe() using architecture OTG configuration
+<6>isp1763_plat_probe() port 2 enabled
+<3>devflags passed by probe: 0x0000010a
+<6>isp1763: start: 0xc000000 end: 0x1000, ispdev->regs = isp1763IOBASE (0xf9000000)
+<6>isp1763_init_device() num poll cycles RESET_ALL = 0
+<6>isp1763_init_device() num poll cycles RESET_HC = 0
+<6>isp1763_init_device() num poll cycles RESET_HC = 0
+<5>hwmode int edge triggered
+<5>hwmode pullup disable
+<5>Reset complete
+<5>otg_setup() id pin = 1
+<5>ISP1763 using device mode
+<3>otg_set_role() switching to PERIPHERAL role
+<6>isp1763 initialized successfully
+<6>ISP1763 USB device initialised
+<6>ISP1582_1763_udc: version 26Dec13-07:07
+<6>isp1763_register_ctrl() entered for role device
+<4>====== isp1763_udc_probe 
+<6>OTG_CTRL_SET: Connecting peripheral to ATX
+<3>Registered device as active driver
+<6>udc resume called
+<4>====== USBEnable 
+<4>====== udc_enable 
+<4>====== USBChipEnable 
+<4>USBChipEnable: no gadget registered, skip intr enable and EP setup
+<6>isp1582_usb_init() using platform specified settings for forcing full speed behavior (0)
+<7>PM: Adding info for No Bus:gadget
+<4>ether_isp1763 gadget: using random self ethernet address
+<4>ether_isp1763 gadget: using random host ethernet address
+<7>PM: Adding info for No Bus:usb0
+<6>usb0: Ethernet Gadget, version: 26Dec13-07:07
+<6>usb0: using ISP1582_1763_udc, OUT ep2out-bulk IN ep1in-bulk STATUS ep3in-int
+<6>usb0: MAC 26:b4:4f:6e:c1:15
+<6>usb0: HOST MAC 12:c0:23:70:03:4b
+<6>usb0: RNDIS ready
+<4>registered gadget driver 'ether_isp1763'
+<4>====== udc_enable 
+<4>====== USBChipEnable 
+<4>is_vbus_present: 0x1
+<7>usb0: eth_open
+<6>isp1763_register_ctrl() entered for role host
+<4>isp1763_hcd_probe: calling usb_create_hcd() for isp1763.0
+<3>Registered host as active driver
+<3>isp1763_hcd_resume: calling usb_add_hcd() for isp1763.0
+<6>isp1763 isp1763.0: ST-Ericsson ISP1763 USB Host Controller
+<4>USB reset
+<4>====== USBChipEnable 
+<4>The USB bus is high speed
+<7>PM: Adding info for No Bus:usbmon2
+<6>isp1763 isp1763.0: new USB bus registered, assigned bus number 2
+<6>isp1763 isp1763.0: bus width: 16
+<6>isp1763_hc_setup() hwmode: 0x1403
+<6>isp1763_hc_setup: wrote 0xf to regs: 0xf9000000 +c8, read: 0xf
+<6>isp1763_hub_control SetPortFeature: wVal: 0x8
+<6>isp1763 isp1763.0: USB ISP 1763 HW rev. 32 started
+<7>PM: Adding info for usb:usb2
+<7>PM: Adding info for No Bus:usbdev2.1_ep00
+<6>usb usb2: configuration #1 chosen from 1 choice
+<7>PM: Adding info for usb:2-0:1.0
+<6>hub 2-0:1.0: USB hub found
+<6>isp1763_hub_descriptor: number of ports 1
+<6>isp1763_hub_descriptor: HubChar 0x9
+<6>hub 2-0:1.0: 1 port detected
+<6>isp1763_hub_control SetPortFeature: wVal: 0x8
+<6>isp1763_hub_control reg 0xf90000a0 setting PORT_POWER 0x1000
+<7>usb0: eth_start
+<7>usb0: qlen 10
+<6>usb0: high speed config #2: 350 mA, Ethernet Gadget, using RNDIS
+<4>eth_setup: GET_DESC, CDC_GET_ENCAP, buf 0xc3c2f400
+<4>eth_setup: GET_DESC, CDC_GET_ENCAP, buf 0xc3c2f400
+<4>eth_setup: GET_DESC, CDC_GET_ENCAP, buf 0xc3c2f400
+<4>eth_setup: GET_DESC, CDC_GET_ENCAP, buf 0xc3c2f400
+<4>eth_setup: GET_DESC, CDC_GET_ENCAP, buf 0xc3c2f400
+<4>eth_setup: GET_DESC, CDC_GET_ENCAP, buf 0xc3c2f400
+<4>eth_setup: GET_DESC, CDC_GET_ENCAP, buf 0xc3c2f400
+<4>eth_setup: GET_DESC, CDC_GET_ENCAP, buf 0xc3c2f400
+<4>eth_setup: GET_DESC, CDC_GET_ENCAP, buf 0xc3c2f400
+<4>eth_setup: GET_DESC, CDC_GET_ENCAP, buf 0xc3c2f400
+<7>PM: Adding info for No Bus:usbdev2.1_ep81
+<7>PM: Adding info for No Bus:usbdev2.1
+<3>isp1763 host controller driver loaded
+<6>isp1763_hub_control SetPortFeature: wVal: 0x4
+<6>SetPortFeature: RESET, setting reset_done to 0x1b6
+<6>GetPortStatus: temp 0x1101 jiffies: 0x1b7 reset_done: 0x1b6
+<6>isp1763_hub_control: status reset 0x1101, status 0x100000
+<6>isp1763_hub_control: status after handshake 0x1005
+<3>port 1 high speed
+<6>isp1763_hub_control: status after checkreset 0x1005
+<6>usb 2-1: new high speed USB device using isp1763 and address 2
+<6>isp1763_hub_control SetPortFeature: wVal: 0x4
+<6>SetPortFeature: RESET, setting reset_done to 0x1c2
+<6>GetPortStatus: temp 0x1101 jiffies: 0x1c3 reset_done: 0x1c2
+<6>isp1763_hub_control: status reset 0x1101, status 0x100000
+<6>isp1763_hub_control: status after handshake 0x1005
+<3>port 1 high speed
+<6>isp1763_hub_control: status after checkreset 0x1005
+<7>PM: Adding info for usb:2-1
+<7>PM: Adding info for No Bus:usbdev2.2_ep00
+<6>usb 2-1: configuration #1 chosen from 1 choice
+<7>PM: Adding info for usb:2-1:1.0
+<6>hub 2-1:1.0: USB hub found
+<6>hub 2-1:1.0: 2 ports detected
+<7>PM: Adding info for No Bus:usbdev2.2_ep81
+<7>PM: Adding info for No Bus:usbdev2.2
+<6>usb 2-1.2: new high speed USB device using isp1763 and address 3
+<7>PM: Adding info for usb:2-1.2
+<7>PM: Adding info for No Bus:usbdev2.3_ep00
+<6>usb 2-1.2: configuration #1 chosen from 1 choice
+<7>PM: Adding info for usb:2-1.2:1.0
+<7>PM: Adding info for No Bus:usbdev2.3_ep8a
+<7>PM: Adding info for No Bus:usbdev2.3_ep0b
+<7>PM: Adding info for No Bus:usbdev2.3
+<6>pegasus: v0.6.14 (2006/09/27), Pegasus/Pegasus II USB Ethernet driver
+<6>usbcore: registered new interface driver pegasus
+<7>PM: Adding info for No Bus:i2c-0
+<6>I2C: i2c-0: PXA I2C adapter
+<7>PM: Adding info for No Bus:i2c-1
+<6>I2C: i2c-1: PXA I2C adapter
+<6>i2c /dev entries driver
+<7>PM: Adding info for No Bus:i2c-0
+<7>PM: Adding info for No Bus:i2c-1
+<4>bosch_vci_spi: module license 'unspecified' taints kernel.
+<6>MDIManagerInfo Date= 0x2a082400 Version= 0x40000 Desc= LED Driver
+<7>PM: Adding info for platform:etas-led
+<1>ETAS LED Driver:led_driver_probe
+<1>Major#==198 Minor#==0
+<1>ETAS LED Driver v0.4.0 LOADED
+<3>led driver registered properly
+<6>MDIManagerInfo Date= 0x2a030e00 Version= 0x30300 Desc= Speaker Driver
+<7>PM: Adding info for platform:etas-speaker
+<1>ETAS SPEAKER Driver:speaker_driver_probe
+<1>Major#==199 Minor#==0
+<1>ETAS SPEAKER Driver v0.3.1 LOADED
+<3>speaker driver registered properly
+<6>TI TMP101 Driver, (c) 2005 Simtec Electronics
+<7>PM: Adding info for i2c:0-0048
+<6>i2c-adapter i2c-0: tmp101 detected, 34 degC
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000442:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000442:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000442:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000442:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000442:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000442:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000442:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000446:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000446:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000446:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000446:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000446:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000446:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000446:000007e0] 
+<4>i2c: error: exhausted retries
+<4>i2c: msg_num: 0 msg_idx: -2000 msg_ptr: 0
+<4>i2c: ICR: 000007e0 ISR: 00000002
+<4>i2c: log: [00000446:000007e0] 
+<5>SCSI subsystem initialized
+<6>Initializing USB Mass Storage driver...
+<6>scsi0 : SCSI emulation for USB Mass Storage devices
+<7>PM: Adding info for No Bus:host0
+<6>usbcore: registered new interface driver usb-storage
+<6>USB Mass Storage support registered.
+<7>usb-storage: device found at 3
+<7>usb-storage: waiting for device to settle before scanning
+<4>Driver 'sd' needs updating - please use bus_type methods
+<7>PM: Adding info for No Bus:target0:0:0
+<5>scsi 0:0:0:0: Direct-Access     Realtek  Driver Storage   1.00 PQ: 0 ANSI: 0 CCS
+<7>PM: Adding info for scsi:0:0:0:0
+<5>sd 0:0:0:0: [sda] 16000 512-byte hardware sectors (8 MB)
+<5>sd 0:0:0:0: [sda] Write Protect is on
+<7>sd 0:0:0:0: [sda] Mode Sense: 03 00 80 00
+<3>sd 0:0:0:0: [sda] Assuming drive cache: write through
+<5>sd 0:0:0:0: [sda] 16000 512-byte hardware sectors (8 MB)
+<5>sd 0:0:0:0: [sda] Write Protect is on
+<7>sd 0:0:0:0: [sda] Mode Sense: 03 00 80 00
+<3>sd 0:0:0:0: [sda] Assuming drive cache: write through
+<6> sda: unknown partition table
+<5>sd 0:0:0:0: [sda] Attached SCSI removable disk
+<7>PM: Adding info for No Bus:target0:0:1
+<7>PM: Removing info for No Bus:target0:0:1
+<7>PM: Adding info for No Bus:target0:0:2
+<7>PM: Removing info for No Bus:target0:0:2
+<7>PM: Adding info for No Bus:target0:0:3
+<7>PM: Removing info for No Bus:target0:0:3
+<7>PM: Adding info for No Bus:target0:0:4
+<7>PM: Removing info for No Bus:target0:0:4
+<7>PM: Adding info for No Bus:target0:0:5
+<7>PM: Removing info for No Bus:target0:0:5
+<7>PM: Adding info for No Bus:target0:0:6
+<7>PM: Removing info for No Bus:target0:0:6
+<7>PM: Adding info for No Bus:target0:0:7
+<7>PM: Removing info for No Bus:target0:0:7
+<7>usb-storage: device scan complete

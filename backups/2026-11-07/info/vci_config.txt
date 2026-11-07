@@ -1,0 +1,156 @@
+# cmd: echo '=== /etc/vci/config tree ==='; ls -laR /etc/vci/config 2>/dev/null; echo '=== testmode flag? ==='; ls -la /etc/vci/config/testmode 2>/dev/null; echo '=== cat small cfgs ==='; for f in $(find /etc/vci/config -type f 2>/dev/null); do echo "----- $f -----"; (head -c 400 "$f"; echo) 2>/dev/null; done
+# rc: 0
+
+=== /etc/vci/config tree ===
+/etc/vci/config:
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34mapp-components[0m
+drwxr-xr-x    5 root     root            0 Jan  1 00:08 [1;34mapps[0m
+lrwxrwxrwx    1 root     root           22 Jan  1 00:00 [1;36mdiagnostics[0m -> [1;34m/mnt/sd/apps/vci-diags[0m
+-rw-r--r--    1 root     root           66 Jan  1 00:00 [0;0mmmc-info.txt[0m
+-rw-r--r--    1 root     root         5594 Jan  1 00:07 [0;0mpr-specific-overlay-sd.tgz[0m
+-rw-r--r--    1 root     root         5798 Jan  1 00:07 [0;0mpr-specific-overlay.tgz[0m
+-rw-r--r--    1 root     root         4199 Jan  1 00:08 [0;0mproduct-config.ini[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:00 [1;34mregistry[0m
+-rw-r--r--    1 root     root           14 Jan  1 00:00 [0;0mserialnum[0m
+-rw-r--r--    1 root     root            0 May 19  2026 [0;0mserver_runtime_log_enable[0m
+-rwxr-xr-x    1 root     root          279 Jan  1 00:08 [1;32mstartup[0m
+drwxr-xr-x    3 root     root            0 Jan  1 00:07 [1;34msystem[0m
+
+/etc/vci/config/app-components:
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34metas-J2534-lib[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34metas-J2534-mon-lib[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34metas-rt-lib[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34metas-vci-lib[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34metas-vci-mon-lib[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34mweb-server[0m
+
+/etc/vci/config/app-components/etas-J2534-lib:
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          108 Jan  1 00:07 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/app-components/etas-J2534-mon-lib:
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          116 Jan  1 00:07 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/app-components/etas-rt-lib:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          108 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/app-components/etas-vci-lib:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          108 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/app-components/etas-vci-mon-lib:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          108 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/app-components/web-server:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          124 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/apps:
+drwxr-xr-x    5 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34mPDU[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34mpendant[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34mvci-diags[0m
+
+/etc/vci/config/apps/PDU:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    5 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root           92 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/apps/pendant:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    5 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          116 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/apps/vci-diags:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    5 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          100 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/registry:
+drwxr-xr-x    2 root     root            0 Jan  1 00:00 [1;34m.[0m
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34m..[0m
+
+/etc/vci/config/system:
+drwxr-xr-x    3 root     root            0 Jan  1 00:07 [1;34m.[0m
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34mplatform[0m
+
+/etc/vci/config/system/platform:
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34m.[0m
+drwxr-xr-x    3 root     root            0 Jan  1 00:07 [1;34m..[0m
+-rwxr-xr-x    1 root     root           92 Jan  1 00:07 [1;32mRtVersion.bin[0m
+=== testmode flag? ===
+=== cat small cfgs ===
+----- /etc/vci/config/apps/PDU/RtVersion.bin -----
+_�T��5Nk�x% O�P�W�׌���^n��_F�l�<$���wj^z��}��[���ﲗ��kv�M��kv�M��kv�M�
+----- /etc/vci/config/apps/vci-diags/RtVersion.bin -----
+_�T��5Nk�x% O�P�W�׌���^n��_F�l�<$���wj^z��}��[�����t��iM�G!�:G�kv�M��kv�M��kv�M�
+----- /etc/vci/config/apps/pendant/RtVersion.bin -----
+_�95/�t6�����Ȩ�a6Zp�ya:A@�tR���~����{&�7p>��q����a�u�@õ�5���I�6���}A�z���.��:���kv�M��kv�M��kv�M�
+----- /etc/vci/config/serialnum -----
+1348-88612951
+
+----- /etc/vci/config/server_runtime_log_enable -----
+
+----- /etc/vci/config/startup -----
+#!/bin/sh
+CID=`cat /sys/bus/mmc/devices/mmc0*/cid`
+CSD=`cat /sys/bus/mmc/devices/mmc0*/csd`
+echo $CID,$CSD > /tmp/host-info/mmc-info.txt
+sleep 15
+ifconfig eth0 up > /dev/null 2>&1
+/sbin/udhcpc --retries=10000 --interface=eth0 --quit & > /dev/null 2>&1
+rm /etc/vci/config/startup
+
+----- /etc/vci/config/pr-specific-overlay.tgz -----
+��A�U�\yw�6��ҧ@e�^"���$U��q�4n;�����K��Ř"���i�������$�{�̙3a�Z"..�LF�g����xs�♟{�����F�q��g�^w}}�3��WFO�7�8���}l�?���U����� oml�O~^|�Lt���\֠�kF�����'��ɓ��������^�~�}���ð����3tդ�zS?��o;o�^��]����6nn�}7����w���3�A�@��"U2.��J�b"v�?�n��q�����m���M������^�ޚ>��l�S�T�N���qg3U��r���A��V�p���k�>�طِ�WZ���x�0�0�A��Ka&�֧.���q��ܸ�3rG
+----- /etc/vci/config/mmc-info.txt -----
+0353445355303447800916658500d23f,400e00325b5900001d8a7f800a40403f
+
+----- /etc/vci/config/pr-specific-overlay-sd.tgz -----
+��A�U�<ml�u�G�&��LI�MKF<�������3���:��Y'�%O      T���{���vϻ{�8�d}Xv�څ�m݊(\�?\T(�Th��I���@?���GKJ>�i�B ��@������iˊy�k��̛�fޛ��f޼=���ݤ�I�4���JH�%�Gc}}}�^y@�!rT��   ���`����ڔ۲����*��笴���\����G{��o�H���f�t���?빹$U��r�H�23k�7����� �S��*���>���-���'hV����w%Fvft�-B��]�3�]�3�{��Ў�m��X$�   CQ�ZȰ�tlr�0���W7]'Fv�"X��uhG6}�4��I����Ν�X��6Ƈ'����{
+----- /etc/vci/config/product-config.ini -----
+####################################################
+[MGR]
+#
+# 6516_fd
+#
+# If set to true, will show the Managers self test tab. If set to false or not present in file
+# the self test tab will not be shown.
+#
+# show_self_test_dlg (true, false:false)
+show_self_test_dlg=false
+
+#
+# If set to true, the Managers network setup tab will be hidden. If set to false or not present in file
+# the
+----- /etc/vci/config/system/platform/RtVersion.bin -----
+_�T��5Nk�x% O�P�W�׌���^n��_FI�^�R�+B0_��0�W��2o���/��ݦ�kv�M��kv�M��kv�M�
+----- /etc/vci/config/app-components/etas-vci-mon-lib/RtVersion.bin -----
+_�T��5Nk�x% O�P�W�׌���^n��_Ff�k>�7���{���HD�n\���&No��ĘL`8"�ͳ-�(+i-�n��9o]�W�kv�M�
+----- /etc/vci/config/app-components/etas-vci-lib/RtVersion.bin -----
+_�T��5Nk�x% O�P�W�׌���^n��_Ff�k>�7���{���Ht�}zuL�&No��d�ya:o2��nPB����f��kv�M��kv�M�
+----- /etc/vci/config/app-components/etas-rt-lib/RtVersion.bin -----
+_�T��5Nk�x% O�P�W�׌���^n��_Ff�k>�7���{���H�(^��X.qm
+�0����@��6a|!��e[���;��@�M��kv�M��kv�M�
+----- /etc/vci/config/app-components/web-server/RtVersion.bin -----
+_�T��5Nk�x% O�P�W�׌���ٹ t�ĺ�z\,i<f�k>�7���{���HXa�(T���Yx����ݧ`����*���ϔh�o�[�n��� �kv�M��kv�M�
+----- /etc/vci/config/app-components/etas-J2534-lib/RtVersion.bin -----
+_�T��5Nk�x% O�P�W�׌���^n��_Ff�k>�7���{���H�z!�g��m�}Ձ�N���c۠ �3)*�{�� �M
+J<#~���kv�M�
+----- /etc/vci/config/app-components/etas-J2534-mon-lib/RtVersion.bin -----
+_�T��5Nk�x% O�P�W�׌���^n��_Ff�k>�7���{���H>F�0!G&�m�}Ձ]��üt%2�i��t�S5ű倗s~uB&�&,P�kv�M��kv�M�

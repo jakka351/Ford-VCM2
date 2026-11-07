@@ -1,0 +1,12 @@
+# cmd: echo '=== self-test ==='; find / -name 'self-test*' 2>/dev/null; echo '=== cgi ==='; find / \( -name '*.cgi' -o -path '*cgi-bin*' \) 2>/dev/null; echo '=== httpd ==='; find / -name 'httpd*' 2>/dev/null; echo '=== hwtest ==='; find / -path '*hwtest*' 2>/dev/null
+# rc: 1
+
+=== self-test ===
+/mnt/sd/apps/vci-diags/hwtest-scripts/self-test.sh
+=== cgi ===
+=== httpd ===
+/tmp/log/httpd.pid
+/mnt/sd/apps/vci-diags/http/httpd
+/web/conf/httpd.conf
+/web/httpd
+=== hwtest ===

@@ -1,0 +1,9 @@
+# cmd: for f in /etc/version /etc/issue /etc/os-release /usr/local/etc/version /etc/vci/version; do echo "===== $f ====="; cat "$f" 2>/dev/null; done; echo '=== find version-ish ==='; find / \( -iname '*version*' -o -iname '*release*' \) -type f 2>/dev/null | head -40
+# rc: 0
+
+===== /etc/version =====
+===== /etc/issue =====
+===== /etc/os-release =====
+===== /usr/local/etc/version =====
+===== /etc/vci/version =====
+=== find version-ish ===

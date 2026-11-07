@@ -1,0 +1,39 @@
+# cmd: echo '=== apps dirs ==='; find / -type d -name 'vci-diags' 2>/dev/null; find / -type d -name 'apps' 2>/dev/null; echo '=== *.sh ==='; find / -name '*.sh' 2>/dev/null
+# rc: 0
+
+=== apps dirs ===
+/etc/vci/config/apps/vci-diags
+/mnt/sd/apps/vci-diags
+/etc/vci/config/apps
+/mnt/sd/apps
+=== *.sh ===
+/mnt/sd/app-components/etas-J2534-lib/boot.sh
+/mnt/sd/app-components/etas-J2534-mon-lib/boot.sh
+/mnt/sd/app-components/etas-rt-lib/boot.sh
+/mnt/sd/app-components/etas-vci-lib/boot.sh
+/mnt/sd/app-components/etas-vci-mon-lib/boot.sh
+/mnt/sd/app-components/web-server/boot.sh
+/mnt/sd/app-components/web-server/start.sh
+/mnt/sd/app-components/web-server/stop.sh
+/mnt/sd/apps/pendant/start.sh
+/mnt/sd/apps/pendant/stop.sh
+/mnt/sd/apps/vci-diags/burnin.sh
+/mnt/sd/apps/vci-diags/hwtest-scripts/self-test.sh
+/usr/local/bin/netdrivers.sh
+/usr/local/bin/start_bluetooth.sh
+/usr/local/bin/viodrivers.sh
+/usr/local/bin/start-pdu.sh
+/usr/local/bin/kickResponder.sh
+/usr/local/bin/init_script_helper.sh
+/usr/local/bin/viodrivers2.sh
+/usr/local/bin/getcurrentap.sh
+/usr/local/bin/stop_bluetooth.sh
+/usr/local/bin/parse-iwlist.sh
+/usr/local/bin/mdiinfo.sh
+/usr/local/bin/signalResponder.sh
+/usr/local/bin/hostapd.sh
+/usr/local/bin/bt-up.sh
+/usr/local/bin/bt-down.sh
+/usr/local/bin/stop-pdu.sh
+/usr/local/bin/init_script_testmode.sh
+/usr/local/bin/init_script.sh

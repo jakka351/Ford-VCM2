@@ -1,0 +1,176 @@
+# cmd: echo '=== inittab ==='; cat /etc/inittab 2>/dev/null; echo; echo '=== init.d ==='; ls -la /etc/init.d 2>/dev/null; echo; for f in /etc/init.d/* /etc/rc* /etc/profile; do echo "===== $f ====="; cat "$f" 2>/dev/null; done
+# rc: 0
+
+=== inittab ===
+console::sysinit:/etc/rcS
+::respawn:/sbin/getty -L -n -w -l /bin/login ttyS0 38400 linux
+#::respawn:/sbin/getty -L -n -l /bin/ash ttyS0 38400 linux
+::restart:/sbin/init
+::shutdown:/bin/umount -a -r
+
+# Start ETAS J2740-tty daemon
+#::respawn:/usr/local/bin/j2740-daemon-tty -s
+# Start ETAS J2740-main daemon
+#::respawn:/usr/local/bin/j2740-daemon-main -s
+
+
+=== init.d ===
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34m.[0m
+drwxr-xr-x   16 root     root         1024 Jan  1 00:00 [1;34m..[0m
+
+===== /etc/init.d/* =====
+===== /etc/rcS =====
+#!/bin/sh
+
+/bin/mount /proc
+/bin/mount /sys
+/bin/mount /dev/pts
+/bin/mount /tmp
+
+echo -n 'Mounting local filesystems '
+/bin/mount -anvt nonfs,noproc,nosmbfs
+
+/bin/mkdir /tmp/log
+
+echo -n 'Starting sysklogd'
+# syslog logs user messages into /tmp/host-info/user.log file 
+mkdir -p /tmp/host-info 
+/sbin/klogd -c 1
+
+# Start the syslogd to catch early initialization
+/sbin/syslogd
+
+if [ -e /usr/local/bin/vci-type-std ]
+then
+        # if std load the product specific overlay from jffs2 partition
+        # Mounting jffs2 partition on /etc/vci/config.
+        echo
+        echo Overlaying product specific stuff from jffs2
+        mkdir -p /etc/vci/config
+        /usr/local/mtd/flash_unlock /dev/mtd8
+        mount -t jffs2 /dev/mtdblock8 /etc/vci/config
+        chmod 770 /etc/vci/config
+
+        # overlaying the initrd content
+        tar xzf /etc/vci/config/pr-specific-overlay.tgz
+        if test $? -ne 0
+        then
+                echo "initrd overlay did not succeed, calling the validator"
+                /usr/bin/sd-card-validator ERROR_SD 2 &
+                exit 1
+        fi              
+
+        # overlaying the sd content
+        tar xzf /etc/vci/config/pr-specific-overlay-sd.tgz
+        if test $? -ne 0
+        then
+                echo "sd overlay did not succeed, calling the validator"
+                /usr/bin/sd-card-validator ERROR_SD 2 &
+                exit 1
+        fi
+        # sd card for std with sd will be loaded in the init_script.sh
+fi
+
+loopcount=0
+loopmax=20
+if [ -e /usr/local/bin/vci-type-pro ]
+then
+        # mount first SD card partition at /usr/local
+        while true
+        do
+                usleep 200000
+                loopcount=`expr $loopcount + 1`
+                
+                if [ $loopcount -eq $loopmax ]
+                then
+                        echo "timeout while mounting SD card, calling the validator"
+                        /usr/bin/sd-card-validator ERROR_SD 1 &
+                        exit 1
+                        #break
+                fi
+
+                /bin/mount -n -t ext3 -o noatime /dev/mmcblk0p1 /usr/local
+                if test $? -eq 0
+                then
+                        echo "SD card mounted on try $loopcount"
+                        # all pros have sd card, load the product specific overlay from sd card
+                        echo
+                        echo Overlaying product specific stuff from sd
+                        tar xzf /usr/local/product/pr-specific-overlay.tgz      
+                        if test $? -ne 0
+                        then
+                                echo "initrd overlay did not succeed, calling the validator"
+                                /usr/bin/sd-card-validator ERROR_SD 2 &
+                                exit 1
+                        fi              
+                        sync;sync;sync; 
+                        break
+                fi
+        done
+
+        # create a link to the sd card in the /mnt directory
+        ln -sf /usr/local /mnt/sd
+        
+        # create a link to the config directory in the sd card
+        mkdir -p /etc/vci
+        chmod 777 /etc/vci
+        ln -sf /usr/local/config /etc/vci/config
+fi
+
+# Create a link to the diagnostic directory - now only works for units that have sd card - TODO
+ln -sf /mnt/sd/apps/vci-diags /etc/vci/config/diagnostics > /dev/null 2>&1
+
+# Initializing the hostname to the device serialnum
+/bin/hostname -F /etc/vci/config/serialnum > /dev/null 2>&1
+
+# Restart the syslogd after setting the hostname. The hostname is included in the syslogd log files
+kill -s SIGTERM `cat /var/run/syslogd.pid`
+/sbin/syslogd
+
+
+# To simplify init sequence updates, the majority of the startup script lives in the init_script
+if [ ! -e /etc/vci/config/testmode ]; then
+        echo Executing from rcS /usr/local/bin/init_script.sh
+        PATH=$PATH:/usr/local/wpa
+        /usr/local/bin/init_script.sh
+else
+        # The queeen bee uses the /usr/local/diags link instead of the one in etc directory
+        if [ ! -e /usr/local/diags ]; then
+                ln -sf /etc/vci/config/diagnostics /usr/local/diags     
+        fi
+        
+        # Remove testmode flag-file so next boot reverts to application mode
+        rm /etc/vci/config/testmode
+        sync
+        
+        # So other software can tell this is testmode
+        touch /tmp/testmode
+
+        echo Executing from rcS /usr/local/bin/init_script_testmode.sh
+        /usr/local/bin/init_script_testmode.sh
+fi
+
+===== /etc/profile =====
+# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+PATH="/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/wpa"
+
+if [ "$BASH" ]; then
+  PS1='\u@\h:\w\$ '
+else
+  if [ "`id -u`" -eq 0 ]; then
+    PS1='# '
+  else
+    PS1='$ '
+  fi
+fi
+
+export PATH PS1
+
+umask 022
+
+alias ll="ls -al"
+alias m=more
+alias md=mkdir
+alias rd=rmdir

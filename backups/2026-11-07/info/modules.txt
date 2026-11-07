@@ -1,0 +1,37 @@
+# cmd: lsmod 2>/dev/null; echo '--- /proc/modules ---'; cat /proc/modules
+# rc: 0
+
+Module                  Size  Used by
+sd_mod                 20496  0 
+usb_storage            35808  0 
+scsi_mod               92428  2 sd_mod,usb_storage
+tmp101                  9520  0 
+etas_speaker           11724  0 
+etas_led               13676  0 
+bosch_vci_spi           7836  0 
+i2c_dev                 6276  0 
+i2c_pxa                 6048  0 
+i2c_core               18928  3 tmp101,i2c_dev,i2c_pxa
+pegasus                23732  0 
+isp1763_hcd            21024  0 
+g_ether_isp1763        31924  0 
+ISP1582_1763_udc       20180  1 g_ether_isp1763
+isp1763_base           22572  2 isp1763_hcd,ISP1582_1763_udc
+ohci_hcd               21832  0 
+--- /proc/modules ---
+sd_mod 20496 0 - Live 0xbf069000
+usb_storage 35808 0 - Live 0xbf05f000
+scsi_mod 92428 2 sd_mod,usb_storage, Live 0xbf047000
+tmp101 9520 0 - Live 0xbf043000
+etas_speaker 11724 0 - Live 0xbf03f000
+etas_led 13676 0 - Live 0xbf03a000
+bosch_vci_spi 7836 0 - Live 0xbf037000 (P)
+i2c_dev 6276 0 - Live 0xbf034000
+i2c_pxa 6048 0 - Live 0xbf031000
+i2c_core 18928 3 tmp101,i2c_dev,i2c_pxa, Live 0xbf02b000
+pegasus 23732 0 - Live 0xbf024000
+isp1763_hcd 21024 0 - Live 0xbf01d000
+g_ether_isp1763 31924 0 - Live 0xbf014000
+ISP1582_1763_udc 20180 1 g_ether_isp1763, Live 0xbf00e000
+isp1763_base 22572 2 isp1763_hcd,ISP1582_1763_udc, Live 0xbf007000
+ohci_hcd 21832 0 - Live 0xbf000000

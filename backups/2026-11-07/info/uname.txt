@@ -1,0 +1,6 @@
+# cmd: uname -a; echo; cat /proc/version
+# rc: 0
+
+Linux 1348-88612951 2.6.24.4-etas-08apr25 #1 PREEMPT Sun Jul 26 13:13:26 PDT 2015 armv5tel unknown
+
+Linux version 2.6.24.4-etas-08apr25 (vcibuilder@sba-vci-linux-build-server) (gcc version 4.2.1 (CodeSourcery Sourcery G++ Lite 2007q3-51)) #1 PREEMPT Sun Jul 26 13:13:26 PDT 2015

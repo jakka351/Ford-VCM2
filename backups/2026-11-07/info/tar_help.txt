@@ -1,0 +1,55 @@
+# cmd: tar 2>&1 | head -40; echo '=== busybox applets ==='; busybox 2>&1 | tail -30
+# rc: 0
+
+BusyBox v1.2.2 (2015.07.26-20:14+0000) multi-call binary
+
+Usage: tar -[czjZxtvO] [-f TARFILE] [-C DIR] [FILE(s)] ...
+
+Create, extract, or list files from a tar file.
+
+Options:
+        c               create
+        x               extract
+        t               list
+
+Archive format selection:
+        z               Filter the archive through gzip
+        j               Filter the archive through bzip2
+        Z               Filter the archive through compress
+
+File selection:
+        f               name of TARFILE or "-" for stdin
+        O               extract to stdout
+        C               change to directory DIR before operation
+        v               verbosely list files processed
+
+=== busybox applets ===
+
+        BusyBox is a multi-call binary that combines many common Unix
+        utilities into a single executable.  Most people will create a
+        link to busybox for each function they wish to use and BusyBox
+        will act like whatever it was invoked as!
+
+Currently defined functions:
+        [, [[, adjtimex, arping, ash, awk, basename, bbconfig, bunzip2,
+        busybox, bzcat, cat, catv, chattr, chgrp, chmod, chown, chroot,
+        cksum, clear, cmp, cp, cpio, crond, crontab, cut, date, dd, df,
+        diff, dirname, dmesg, dos2unix, dpkg, dpkg-deb, du, e2fsck, e2label,
+        echo, egrep, eject, env, expr, false, fdisk, fgrep, find, findfs,
+        fold, free, freeramdisk, fsck, fsck.ext2, fsck.ext3, fsck.minix,
+        ftpget, ftpput, fuser, getopt, getty, grep, gunzip, gzip, halt,
+        head, hexdump, hostname, hwclock, id, ifconfig, ifdown, ifup,
+        inetd, init, install, ip, ipaddr, ipcalc, ipcrm, ipcs, iplink,
+        iproute, iptunnel, kill, klogd, last, length, less, linux32, linux64,
+        linuxrc, ln, logger, login, logread, losetup, ls, lsattr, md5sum,
+        mdev, mesg, mkdir, mke2fs, mkfifo, mkfs.ext2, mkfs.ext3, mkfs.minix,
+        mknod, mktemp, more, mount, mountpoint, mv, nameif, nc, netstat,
+        nice, nohup, od, patch, pidof, ping, pivot_root, poweroff, printenv,
+        printf, ps, pwd, rdate, readlink, readprofile, realpath, reboot,
+        renice, reset, rm, rmdir, route, run-parts, runlevel, rx, sed,
+        setarch, setlogcons, setsid, sh, sha1sum, sleep, sort, start-stop-daemon,
+        stat, strings, stty, sum, sync, sysctl, syslogd, tail, tar, tee,
+        telnet, telnetd, test, tftp, time, top, touch, tr, traceroute,
+        true, tty, tune2fs, udhcpc, umount, uname, uncompress, uniq, unix2dos,
+        unzip, uptime, usleep, uudecode, uuencode, vconfig, vi, watch,
+        watchdog, wc, which, who, whoami, xargs, yes, zcat

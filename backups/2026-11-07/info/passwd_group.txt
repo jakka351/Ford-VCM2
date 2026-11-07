@@ -1,0 +1,42 @@
+# cmd: echo '--- passwd ---'; cat /etc/passwd 2>/dev/null; echo '--- shadow ---'; cat /etc/shadow 2>/dev/null; echo '--- group ---'; cat /etc/group 2>/dev/null
+# rc: 0
+
+--- passwd ---
+root:$1$or8tWlW8$bO8ZpnrPk57FC/D24ypd9/:0:0:root:/:/bin/bash
+admin:$1$j.jt1rjq$HSHSQ4FvvBJbzv/2TJLVq/:1000:0:admin user:/:/bin/bash
+guest:$1$A0XR5sTf$RxyqwrCXv2xtQOd6WysV4/:1200:1100:guest user:/usr/local/apps:/bin/bash
+daemon:*:1:1:daemon:/usr/sbin:/bin/sh
+bin:*:2:2:bin:/bin:/bin/sh
+sys:*:3:3:sys:/dev:/bin/sh
+sync:*:4:100:sync:/bin:/bin/sync
+man:*:6:100:man:/var/cache/man:/bin/sh
+lp:*:7:7:lp:/var/spool/lpd:/bin/sh
+operator:*:37:37:Operator:/var:/bin/sh
+nobody:!:65534:65534:nobody:/home:/bin/sh
+telnetd:!:101:101::/usr/lib/telnetd:/bin/true
+ftpd:!:102:102::/home/ftp:/bin/true
+httpd:!:103:103::/home/httpd:/bin/true
+sshd:!:22:22::/var/empty:/bin/true
+--- shadow ---
+--- group ---
+root:*:0:admin
+guest:*:1100:guest
+daemon:*:1:
+bin:*:2:
+sys:*:3:
+adm:*:4:
+tty:*:5:
+disk:*:6:
+lp:*:7:lp
+operator:*:37:
+list:*:38:
+shadow:*:42:
+utmp:*:43:telnetd
+users:*:100:
+nobody*:65534:
+dsa:x:900:
+telnetd:x:101:
+ftpd:x:102:
+httpd:x:103:
+kmem:x:15:
+sshd:x:22:

@@ -1,0 +1,21 @@
+# cmd: mount; echo '--- /proc/mounts ---'; cat /proc/mounts
+# rc: 0
+
+/dev/root on / type ext2 (rw)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw)
+none on /dev/pts type devpts (rw)
+tmpfs on /tmp type tmpfs (rw)
+/dev/mtdblock8 on /etc/vci/config type jffs2 (rw)
+/dev/mmcblk0p1 on /mnt/sd type ext3 (rw,noatime,data=ordered)
+/dev/mmcblk0p2 on /usr/local/data type ext3 (rw,data=ordered)
+--- /proc/mounts ---
+rootfs / rootfs rw 0 0
+/dev/root / ext2 rw 0 0
+proc /proc proc rw 0 0
+sysfs /sys sysfs rw 0 0
+none /dev/pts devpts rw 0 0
+tmpfs /tmp tmpfs rw 0 0
+/dev/mtdblock8 /etc/vci/config jffs2 rw 0 0
+/dev/mmcblk0p1 /mnt/sd ext3 rw,noatime,data=ordered 0 0
+/dev/mmcblk0p2 /usr/local/data ext3 rw,data=ordered 0 0

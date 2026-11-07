@@ -1,0 +1,4 @@
+# cmd: cat /proc/cmdline
+# rc: 0
+
+root=/dev/ram rw ramdisk_size=24576 quiet init=/linuxrc board_id=0x1 console=ttyS0,38400 ethaddr=0x00:0x90:0x7e:0x0e:0xb4:0x71 bootmode=primary mtdparts=flash0:256k(fsboot),256k(boot),128k(bootvars),640k(fpga),1536k(linux2),6144k(initrd2),3072k(linux1),19328k(initrd1),1024k(jffs2),128k@32384k(linuxvars1),128k(linuxvars2),32k@32704k(serialnum),32k(macaddress)

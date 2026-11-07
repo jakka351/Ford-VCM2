@@ -1,0 +1,23 @@
+# cmd: cat /proc/partitions
+# rc: 0
+
+major minor  #blocks  name
+
+  31     0        256 mtdblock0
+  31     1        256 mtdblock1
+  31     2        128 mtdblock2
+  31     3        640 mtdblock3
+  31     4       1536 mtdblock4
+  31     5       6144 mtdblock5
+  31     6       3072 mtdblock6
+  31     7      19328 mtdblock7
+  31     8       1024 mtdblock8
+  31     9        128 mtdblock9
+  31    10        128 mtdblock10
+  31    11         32 mtdblock11
+  31    12         32 mtdblock12
+ 254     0    3872256 mmcblk0
+ 254     1     976600 mmcblk0p1
+ 254     2    2636736 mmcblk0p2
+ 254     3     258912 mmcblk0p3
+   8     0       8000 sda

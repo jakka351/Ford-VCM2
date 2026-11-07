@@ -1,0 +1,6 @@
+# cmd: hostname; echo; id; echo; cat /etc/hostname 2>/dev/null
+# rc: 1
+
+1348-88612951
+
+uid=0(root) gid=0(root)

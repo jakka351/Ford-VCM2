@@ -1,0 +1,16 @@
+# cmd: df -h; echo '---'; df
+# rc: 0
+
+Filesystem                Size      Used Available Use% Mounted on
+/dev/ram                 17.4M     16.7M    745.0k  96% /
+tmpfs                    30.3M    764.0k     29.6M   2% /tmp
+/dev/mtdblock8            1.0M    416.0k    608.0k  41% /etc/vci/config
+/dev/mmcblk0p1          938.7M     39.8M    851.3M   4% /mnt/sd
+/dev/mmcblk0p2            2.5G     64.1M      2.3G   3% /usr/local/data
+---
+Filesystem           1k-blocks      Used Available Use% Mounted on
+/dev/ram                 17845     17100       745  96% /
+tmpfs                    31024       764     30260   2% /tmp
+/dev/mtdblock8            1024       416       608  41% /etc/vci/config
+/dev/mmcblk0p1          961232     40720    871684   4% /mnt/sd
+/dev/mmcblk0p2         2595276     65636   2397804   3% /usr/local/data

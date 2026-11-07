@@ -1,0 +1,17 @@
+# cmd: cat /proc/mtd
+# rc: 0
+
+dev:    size   erasesize  name
+mtd0: 00040000 00020000 "fsboot"
+mtd1: 00040000 00020000 "boot"
+mtd2: 00020000 00020000 "bootvars"
+mtd3: 000a0000 00020000 "fpga"
+mtd4: 00180000 00020000 "linux2"
+mtd5: 00600000 00020000 "initrd2"
+mtd6: 00300000 00020000 "linux1"
+mtd7: 012e0000 00020000 "initrd1"
+mtd8: 00100000 00020000 "jffs2"
+mtd9: 00020000 00020000 "linuxvars1"
+mtd10: 00020000 00020000 "linuxvars2"
+mtd11: 00008000 00008000 "serialnum"
+mtd12: 00008000 00008000 "macaddress"

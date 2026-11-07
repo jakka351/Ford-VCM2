@@ -1,0 +1,40 @@
+# cmd: ps w 2>/dev/null || ps
+# rc: 0
+
+  PID  Uid     VmSize Stat Command
+    1 root        656 S   init     
+    2 root            SW< [kthreadd]
+    3 root            SW< [ksoftirqd/0]
+    4 root            SW< [events/0]
+    5 root            SW< [khelper]
+   43 root            SW< [kblockd/0]
+   45 root            SW< [ksuspend_usbd]
+   51 root            SW< [khubd]
+   54 root            SW< [kseriod]
+   56 root            SW< [kmmcd]
+   80 root            SW  [pdflush]
+   81 root            SW  [pdflush]
+   82 root            SW< [kswapd0]
+  123 root            SW< [aio/0]
+  692 root            SW< [mtdblockd]
+  745 root            SW< [mmcqd]
+  756 root        460 S   /sbin/klogd -c 1 
+  762 root            SWN [jffs2_gcd_mtd8]
+  772 root        536 S   /sbin/syslogd 
+  784 root            SW< [kjournald]
+  800 root            SW< [kjournald]
+ 1056 root            SW< [pegasus]
+ 1116 root        424 S   /usr/sbin/telnetd -l /bin/bash 
+ 1119 root        508 S   /libexec/ftpd -D 
+ 1165 root        484 S   /usr/sbin/inetd 
+ 1180 root        464 S   httpd-root
+ 1211 root            SW< [scsi_eh_0]
+ 1212 root            SW< [usb-storage]
+ 1299 root       1216 S   /bin/bash 
+ 1352 root       1112 S   /bin/bash /etc/vci/config/diagnostics/burnin.sh 
+ 1353 root        568 S   /sbin/getty -L -n -w -l /bin/login ttyS0 38400 linux 
+ 1363 root        944 S   /bin/bash ./counttime 
+ 1365 root        416 S   sleep 600 
+ 6036 root       1244 S   /bin/bash 
+ 6086 root        760 R   ps w 
+ 6088 root        400 S   usleep 300000 

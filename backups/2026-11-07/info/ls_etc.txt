@@ -1,0 +1,154 @@
+# cmd: ls -la /etc; echo; ls -laR /etc/vci 2>/dev/null
+# rc: 0
+
+drwxr-xr-x   16 root     root         1024 Jan  1 00:00 [1;34m.[0m
+drwxr-xr-x   19 1001     1001         1024 Jan  1 00:04 [1;34m..[0m
+lrwxrwxrwx    1 root     root           24 Jul 26  2015 [1;36madjtime[0m -> [1;36m/var/lib/hwclock/adjtime[0m
+drwxr-xr-x    7 root     root         1024 Jul 26  2015 [1;34mapm[0m
+-rw-r--r--    1 root     root          119 Jul 26  2015 [0;0mbash.bashrc[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mdefault[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mdevfs[0m
+lrwxrwxrwx    1 root     root           14 Jul 26  2015 [1;36mdhcpc[0m -> [1;34m/var/run/dhcpc[0m
+-rw-r--r--    1 root     root            2 Jul 26  2015 [0;0mdhcpd.leases[0m
+-rw-r--r--    1 root     root          404 Jul 26  2015 [0;0mfstab[0m
+-rw-r--r--    1 root     root          132 Jul 26  2015 [0;0mftpusers[0m
+-rw-r--r--    1 root     root          245 Jul 26  2015 [0;0mgettydefs[0m
+-rw-r--r--    1 root     root          260 Jul 26  2015 [0;0mgroup[0m
+-rw-r--r--    1 root     root           26 Jul 26  2015 [0;0mhost.conf[0m
+-rw-r--r--    1 root     root            8 Jul 26  2015 [0;0mhostname-save[0m
+-rw-r--r--    1 root     root           20 Jul 26  2015 [0;0mhosts[0m
+-rw-r--r--    1 root     root            8 Jul 26  2015 [0;0mhosts.allow[0m
+drwxr-xr-x    2 root     root         1024 Jan  1 00:00 [1;34mhotplug[0m
+drwxr-xr-x    4 root     root         1024 Jul 26  2015 [1;34mhotplug.d[0m
+-rw-r--r--    1 root     root         2251 Jul 26  2015 [0;0minetd.conf[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34minit.d[0m
+lrwxrwxrwx    1 root     root           15 Jul 26  2015 [1;36minitrunlvl[0m -> [1;36m/tmp/initrunlvl[0m
+-rwxr-xr-x    1 root     root          604 Jul 26  2015 [1;32minitscript[0m
+-rwxr-xr-x    1 root     root          354 Jul 26  2015 [1;32minittab[0m
+-rw-r--r--    1 root     root          421 Jul 26  2015 [0;0minputrc[0m
+-rw-r--r--    1 root     root         4110 Jul 26  2015 [0;0mld.so.cache[0m
+-rw-r--r--    1 root     root           24 Jul 26  2015 [0;0mld.so.conf[0m
+-rw-r--r--    1 root     root           56 Jul 26  2015 [0;0mlocaltime[0m
+-rw-r--r--    1 root     root         9163 Jul 26  2015 [0;0mlogin.defs[0m
+-rw-r--r--    1 root     root         2996 Jul 26  2015 [0;0mmodprobe.conf[0m
+-rw-r--r--    1 root     root          287 Jul 26  2015 [0;0mmodules[0m
+-rw-r--r--    1 root     root            5 Jul 26  2015 [0;0mmodules.conf[0m
+-rw-r--r--    1 root     root           38 Jul 26  2015 [0;0mmotd[0m
+lrwxrwxrwx    1 root     root           12 Jul 26  2015 [1;36mmtab[0m -> [0;0m/proc/mounts[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mnetwork[0m
+-rw-r--r--    1 root     root          465 Jul 26  2015 [0;0mnsswitch.conf[0m
+-rw-r--r--    1 root     root          534 Jul 26  2015 [0;0mpam.conf[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mpam.d[0m
+-rw-r--r--    1 root     root          656 Jul 26  2015 [0;0mpasswd[0m
+drwxr-xr-x    3 root     root         1024 Jul 26  2015 [1;34mpcmcia[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mppp[0m
+-rw-r--r--    1 root     root          411 Jul 26  2015 [0;0mprofile[0m
+-rw-r--r--    1 root     root         1748 Jul 26  2015 [0;0mprotocols[0m
+-rwxr-xr-x    1 root     root         3508 Jul 26  2015 [1;32mrcS[0m
+-rw-r--r--    1 root     root         1615 Jul 26  2015 [0;0mrpc[0m
+-rw-r--r--    1 root     root          100 Jul 26  2015 [0;0msecuretty[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34msecurity[0m
+-rw-r--r--    1 root     root        14499 Jul 26  2015 [0;0mservices[0m
+-rw-r--r--    1 root     root           18 Jul 26  2015 [0;0mshells[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34mskel[0m
+drwxr-xr-x    2 root     root         1024 Jul 26  2015 [1;34msysconfig[0m
+-rw-r--r--    1 root     root          201 Jul 26  2015 [0;0msysctl.conf[0m
+-rw-r--r--    1 root     root         1403 Jul 26  2015 [0;0msyslog.conf[0m
+drwxr-xr-x    3 root     root         1024 Jan  1 00:00 [1;34mvci[0m
+
+/etc/vci:
+drwxr-xr-x    3 root     root         1024 Jan  1 00:00 [1;34m.[0m
+drwxr-xr-x   16 root     root         1024 Jan  1 00:00 [1;34m..[0m
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34mconfig[0m
+
+/etc/vci/config:
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34m.[0m
+drwxr-xr-x    3 root     root         1024 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34mapp-components[0m
+drwxr-xr-x    5 root     root            0 Jan  1 00:08 [1;34mapps[0m
+lrwxrwxrwx    1 root     root           22 Jan  1 00:00 [1;36mdiagnostics[0m -> [1;34m/mnt/sd/apps/vci-diags[0m
+-rw-r--r--    1 root     root           66 Jan  1 00:00 [0;0mmmc-info.txt[0m
+-rw-r--r--    1 root     root         5594 Jan  1 00:07 [0;0mpr-specific-overlay-sd.tgz[0m
+-rw-r--r--    1 root     root         5798 Jan  1 00:07 [0;0mpr-specific-overlay.tgz[0m
+-rw-r--r--    1 root     root         4199 Jan  1 00:08 [0;0mproduct-config.ini[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:00 [1;34mregistry[0m
+-rw-r--r--    1 root     root           14 Jan  1 00:00 [0;0mserialnum[0m
+-rw-r--r--    1 root     root            0 May 19  2026 [0;0mserver_runtime_log_enable[0m
+-rwxr-xr-x    1 root     root          279 Jan  1 00:08 [1;32mstartup[0m
+drwxr-xr-x    3 root     root            0 Jan  1 00:07 [1;34msystem[0m
+
+/etc/vci/config/app-components:
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34metas-J2534-lib[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34metas-J2534-mon-lib[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34metas-rt-lib[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34metas-vci-lib[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34metas-vci-mon-lib[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34mweb-server[0m
+
+/etc/vci/config/app-components/etas-J2534-lib:
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          108 Jan  1 00:07 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/app-components/etas-J2534-mon-lib:
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          116 Jan  1 00:07 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/app-components/etas-rt-lib:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          108 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/app-components/etas-vci-lib:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          108 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/app-components/etas-vci-mon-lib:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          108 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/app-components/web-server:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    8 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          124 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/apps:
+drwxr-xr-x    5 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34mPDU[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34mpendant[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34mvci-diags[0m
+
+/etc/vci/config/apps/PDU:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    5 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root           92 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/apps/pendant:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    5 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          116 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/apps/vci-diags:
+drwxr-xr-x    2 root     root            0 Jan  1 00:08 [1;34m.[0m
+drwxr-xr-x    5 root     root            0 Jan  1 00:08 [1;34m..[0m
+-rwxr-xr-x    1 root     root          100 Jan  1 00:08 [1;32mRtVersion.bin[0m
+
+/etc/vci/config/registry:
+drwxr-xr-x    2 root     root            0 Jan  1 00:00 [1;34m.[0m
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34m..[0m
+
+/etc/vci/config/system:
+drwxr-xr-x    3 root     root            0 Jan  1 00:07 [1;34m.[0m
+drwxrwx---    7 root     root            0 Jan  1 00:00 [1;34m..[0m
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34mplatform[0m
+
+/etc/vci/config/system/platform:
+drwxr-xr-x    2 root     root            0 Jan  1 00:07 [1;34m.[0m
+drwxr-xr-x    3 root     root            0 Jan  1 00:07 [1;34m..[0m
+-rwxr-xr-x    1 root     root           92 Jan  1 00:07 [1;32mRtVersion.bin[0m
