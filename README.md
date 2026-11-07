@@ -100,6 +100,7 @@ Set your PC to a **static IP on `192.168.171.x`** (e.g. `.1`, mask `/24`):
 - **Root shell:** `telnet 192.168.171.2` — ~10–15 s after the beep (PuTTY/ExtraPuTTY, type **Telnet**, port **23**). Lands straight on a root prompt (`bash-3.2#`), **no credentials** on stock test-mode firmware.
 
 > *Set Repair Test Mode* must be re-armed each boot unless you persist it (the self-test hook above, or an always-testmode custom firmware).
+<img width="701" height="378" alt="image" src="https://github.com/user-attachments/assets/a9941955-ed3f-4fe9-915a-2823a9f765bb" />
 
 ---
 
