@@ -1,0 +1,3 @@
+file	gz_bytes	md5	tar_members	uncompressed_bytes	device_find_count	ok	error
+rootfs.tar.gz	7713728	92188d7e8b6072cb267f3f9933e1b7e4	930	16670135	928	True	
+sd-p1-mnt-sd.tar.gz	6447239	b64b63fbda74ca88dfd9db2f1f508fa5	156	24396758	156	True	
